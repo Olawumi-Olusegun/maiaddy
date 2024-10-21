@@ -34,6 +34,7 @@ const NavOptix = () => {
                         <DropdownContent id={3}>
                             <SidebarLink to="#">E-Commerce and Delivery Services</SidebarLink>
                             <SidebarLink to="#">Ride-Hailing Services</SidebarLink>
+                            <SidebarLink to="#">Logistics and Fleet Management</SidebarLink>
                         </DropdownContent>
 
                         <SidebarTitle to="#" className="font-semibold">Pricing</SidebarTitle>

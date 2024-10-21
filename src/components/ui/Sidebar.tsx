@@ -28,7 +28,7 @@ const SidebarProvider: FC<{ children: ReactNode }> = ({ children }) => {
 // Reusable Sidebar component
 const Sidebar: FC<{ children: ReactNode }> = ({ children }) => {
     return (
-        <aside className="hidden fixed top-0 left-0 p-4 h-dvh text-black bg-appBg md:translate-x-0 transform transition-transform duration-300 ease-in-out md:static md:flex flex-col gap-2 w-[278px] z-50 lg:translate-x-0">
+        <aside className="hidden fixed top-0 left-0 p-4 min-h-dvh text-black bg-appBg md:translate-x-0 transform transition-transform duration-300 ease-in-out md:static md:flex flex-col gap-2 w-[278px] z-50 lg:translate-x-0">
             {children}
         </aside>
     );

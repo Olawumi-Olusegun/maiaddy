@@ -31,7 +31,14 @@ const RealSight = () => {
                             <SidebarLink to="#">Comprehensive Market Intelligence</SidebarLink>
                         </DropdownContent>
 
-                        <SidebarTitle to="#" className="font-semibold">How RealSight Works</SidebarTitle>
+                        <SidebarButton id={3} title="How RealSight Works" />
+                        <DropdownContent id={3}>
+                            <SidebarLink to="#">Data Integration</SidebarLink>
+                            <SidebarLink to="#">Customizable</SidebarLink>
+                            <SidebarLink to="#">Real-Time Data Access</SidebarLink>
+                            <SidebarLink to="#">Continuous Update</SidebarLink>
+                        </DropdownContent>
+
                         <SidebarTitle to="#" className="font-semibold">Pricing</SidebarTitle>
                         <SidebarTitle to="#" className="font-semibold">Documentation</SidebarTitle>
                     </Sidebar>

@@ -31,6 +31,14 @@ const InsurSight = () => {
                             <SidebarLink to="#">Comprehensive Risk Intelligence</SidebarLink>
                         </DropdownContent>
 
+                        <SidebarButton id={3} title="How InsurSight Works" />
+                        <DropdownContent id={3}>
+                            <SidebarLink to="#">Data Integration</SidebarLink>
+                            <SidebarLink to="#">Customizable</SidebarLink>
+                            <SidebarLink to="#">Real-Time Data Access</SidebarLink>
+                            <SidebarLink to="#">Continuous Update</SidebarLink>
+                        </DropdownContent>
+
                         <SidebarTitle to="#" className="font-semibold">Pricing</SidebarTitle>
                         <SidebarTitle to="#" className="font-semibold">Documentation</SidebarTitle>
                     </Sidebar>
