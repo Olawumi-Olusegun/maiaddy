@@ -655,10 +655,10 @@ const CellGrid = () => {
                     <ActionCard>
                         <ActionCard.Body>
                             <ActionCard.Title>
-                                Get Started with UtilityNet
+                                Get Started with CellGrid
                             </ActionCard.Title>
                             <ActionCard.SubTitle>
-                                Optimize your utility services with the power of accurate location data. Contact us today to integrate UtilityNet into your infrastructure planning and service delivery processes
+                                Maximise the efficiency and reach of your telecommunications network with CellGrid. Contact us today to integrate our advanced geospatial tools into your planning processes.
                             </ActionCard.SubTitle>
                             <ActionCard.ActionButtons>
                                 <ActionCard.ActionLink to="/">

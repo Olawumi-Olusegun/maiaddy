@@ -11,11 +11,14 @@ const HomePage = () => {
                     <PageHero>
                         <PageHero.Body>
                             <PageHero.Title>Deliver better, faster with location intelligence</PageHero.Title>
-                            <PageHero.HeroList>
+                            {/* <PageHero.HeroList>
                                 <PageHero.HeroListItem>Our APIs are built to integrate effortlessly with your existing systems.</PageHero.HeroListItem>
                                 <PageHero.HeroListItem>Benefit from lightning-fast response times and reliable performance to enhance user experience.</PageHero.HeroListItem>
                                 <PageHero.HeroListItem>Handle increasing user loads with confidence, knowing our API is built for growth.</PageHero.HeroListItem>
-                            </PageHero.HeroList>
+                            </PageHero.HeroList> */}
+                            <PageHero.Description>
+                                We specialize in geospatial data and location intelligence solutions, helping businesses make smarter decisions, optimize operations, and uncover new opportunities with precision and accuracy.
+                            </PageHero.Description>
                             <PageHero.ActionButtons>
                                 <PageHero.ActionLink to="/">
                                     Get Started for free
@@ -27,7 +30,6 @@ const HomePage = () => {
                             </PageHero.ActionButtons>
                         </PageHero.Body>
                     </PageHero>
-
                 </Container>
             </section>
 
@@ -35,8 +37,8 @@ const HomePage = () => {
             <section className="w-full ">
                 <Container>
                     <div className="flex flex-col gap-1.5">
-                        <h4 className="text-center text-sm text-primary-70">Solutions</h4>
-                        <h2 className="text-center font-semibold text-3xl lg:text-4xl text-primary-90">Unlock Growth with Location Intelligence</h2>
+                        {/* <h4 className="text-center text-sm text-primary-70">Solutions</h4> */}
+                        <h2 className="text-center font-semibold text-3xl lg:text-4xl text-primary-90">Industry Solutions</h2>
                     </div>
                     <ServicesCard>
 

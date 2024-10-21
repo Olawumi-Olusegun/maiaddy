@@ -6,7 +6,7 @@ import { cn } from "../../utils/cn"
 
 const ServicesCard = ({ children }: PropsWithChildren) => {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 py-10 w-full mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 py-10 w-full mx-auto">
             {children}
         </div>
     )
@@ -42,7 +42,10 @@ const Icon = ({ children, className, ...props }: HtmlHTMLAttributes<HTMLDivEleme
 const Title = ({ children, className, ...props }: HtmlHTMLAttributes<HTMLParagraphElement>) => {
     return (
         <>
-            <h3 className={cn("text-2xl font-bold text-gray-800 truncate", className)} {...props}>{children}</h3>
+            <h3 className={cn("flex items-center gap-1 truncate", className)} {...props}>
+                <span className="text-2xl font-bold text-gray-800">{children}</span>
+                <span className="bg-[#F4F0FA] text-[#6740C2] text-sm font-normal py-1 px-2 rounded-full">Coming Soon</span>
+            </h3>
         </>
     )
 }
