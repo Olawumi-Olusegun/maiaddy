@@ -1,5 +1,6 @@
 import Container from "../components/Container"
 import ActionCard from "../components/ui/ActionCard"
+import FeatureCard from "../components/ui/FeatureCard"
 import PageHero from "../components/ui/PageHero"
 import Pricing from "../components/ui/Pricing"
 
@@ -28,49 +29,76 @@ const TourMap = () => {
                     </PageHero>
 
 
-                    <div className="w-full max-w-[1119px] mx-auto ">
-                        <div className="py-8">
-                            <h2 className="text-gray-800 mb-4">Features</h2>
-                            <div className="flex flex-col gap-8">
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
-                                    <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-2">Personalized Itinerary Planning</h3>
-                                        <p className="text-gray-600 text-xl">Enable tourists to create tailored travel plans by accessing detailed location data for attractions, landmarks, and cultural sites within specific postcode areas.</p>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
-                                    </div>
-                                </div>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
-                                    <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-2">Proximity-Based Recommendations</h3>
-                                        <p className="text-gray-600 text-xl">Offer suggestions for nearby activities, restaurants, and shops as travelers move through different regions, enhancing their overall experience.</p>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/audience.png" alt="audience" />
-                                    </div>
-                                </div>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
-                                    <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-2">Real-Time Safety Updates</h3>
-                                        <p className="text-gray-600 text-xl">Provide tourists with critical safety information and emergency service contacts based on their exact location, ensuring a secure and worry-free journey.</p>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/billboard.png" alt="billboard" />
-                                    </div>
-                                </div>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
-                                    <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-2">Localized Cultural Insights</h3>
-                                        <p className="text-gray-600 text-xl">Enrich your travel platform with cultural and historical site information, ensuring that tourists gain a deeper understanding of the areas they visit.</p>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/billboard.png" alt="billboard" />
-                                    </div>
-                                </div>
+                    <div className="w-full max-w-[1119px] mx-auto">
+                        <FeatureCard>
+                            <FeatureCard.MainTitle>Features</FeatureCard.MainTitle>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Personalized Itinerary Planning</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            Enable tourists to create tailored travel plans by accessing detailed location data for attractions, landmarks, and cultural sites within specific postcode areas.
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/iteneray-planning.png" alt="iteneray-planning-image" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                                <FeatureCard.Divider />
+                            </FeatureCard.Body>
+                        </FeatureCard>
 
-                            </div>
-                        </div>
+                        <FeatureCard>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Proximity-Based Recommendations</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            Offer suggestions for nearby activities, restaurants, and shops as travelers move through different regions, enhancing their overall experience.
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/proximity.png" alt="proximity-image" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                                <FeatureCard.Divider />
+                            </FeatureCard.Body>
+                        </FeatureCard>
+
+                        <FeatureCard>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Real-Time Safety Updates</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            Provide tourists with critical safety information and emergency service contacts based on their exact location, ensuring a secure and worry-free journey.
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/safety-updates.png" alt="safety-updates-image" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                                <FeatureCard.Divider />
+                            </FeatureCard.Body>
+                        </FeatureCard>
+
+                        <FeatureCard>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Localized Cultural Insights</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            Enrich your travel platform with cultural and historical site information, ensuring that tourists gain a deeper understanding of the areas they visit.
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/culture.png" alt="culture-image" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                                <FeatureCard.Divider />
+                            </FeatureCard.Body>
+                        </FeatureCard>
+
 
                         <div className="py-8">
                             <h2 className="text-gray-800 mb-8 font-bold">WHY CHOOOSE TOURMAP?</h2>
@@ -81,70 +109,68 @@ const TourMap = () => {
                             </div>
                         </div>
 
-                        {/* H */}
-                        <div className="w-full flex flex-col gap-4 ">
-                            <h3 className="text-lg font-semibold text-gray-800 mb-2">Use Cases</h3>
-                            <div className="grid grid-cols-12 gap-5 lg:gap-x-10 py-5">
-                                <div className="flex flex-col gap-4 rounded-lg w-full col-span-12 md:col-span-7">
-                                    <div className="w-full ">
-                                        <div className="flex items-start flex-wrap gap-3">
-                                            <h1 className="font-semibold w-full text-xl">Custom Travel Itinerary Generation</h1>
-                                            <p className="w-full md:max-w-[700px] text-xl"> <span className="font-semibold">Scenario:</span> A travel agency offers customized travel packages to clients based on their preferences (e.g., cultural heritage sites, nature, adventure).</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="w-full col-span-12 md:col-span-4">
-                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
-                                </div>
-                            </div>
+                        <FeatureCard>
+                            <FeatureCard.MainTitle>Use Cases</FeatureCard.MainTitle>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle className="md:col-span-7">
+                                        <FeatureCard.Description>
+                                            <div className="w-full ">
+                                                <div className="flex items-start flex-wrap gap-3">
+                                                    <h1 className="font-semibold w-full text-xl text-neutral-90">Custom Travel Itinerary Generation</h1>
+                                                    <p className="w-full md:max-w-[700px] text-xl"> <span className="font-semibold">Scenario:</span> A travel agency offers customized travel packages to clients based on their preferences (e.g., cultural heritage sites, nature, adventure).</p>
+                                                </div>
+                                            </div>
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image className="md:col-span-5">
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/itenery-generation.png" alt="itenery-generation-image" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                            </FeatureCard.Body>
+                        </FeatureCard>
 
-                            <div className="grid grid-cols-12 gap-5 lg:gap-x-10 py-5">
-                                <div className="flex flex-col gap-4 rounded-lg w-full col-span-12 md:col-span-7">
-                                    <div className="w-full">
-                                        <div className="flex items-start flex-wrap gap-3">
-                                            <h1 className="font-semibold w-full text-xl">Custom Travel Itinerary Generation</h1>
-                                            <p className="w-full md:max-w-[700px] text-xl"> <span className="font-semibold">Scenario:</span> A state or regional agricultural extension service is tasked with monitoring and controlling the spread of pests and diseases across multiple farming communities.</p>
-                                            <p className="w-full md:max-w-[700px] text-xl"> <span className="font-semibold">Use Cases:</span> The extension service can integrate AgriZone to track and predict the movement of pests and diseases by postcode. This enables them to issue early warnings to farmers in affected areas, allowing for timely interventions and reducing crop losses.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="w-full col-span-12 md:col-span-4">
-                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
-                                </div>
-                            </div>
+                        <FeatureCard>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle className="md:col-span-7">
+                                        <FeatureCard.Description>
+                                            <div className="w-full ">
+                                                <div className="flex items-start flex-wrap gap-3">
+                                                    <h1 className="font-semibold w-full text-xl text-neutral-90">Location-Based Marketing for Local Businesses</h1>
+                                                    <p className="w-full md:max-w-[700px] text-xl"> <span className="font-semibold">Scenario:</span> A local restaurant chain wants to attract more tourists to its locations during peak travel seasons.</p>
+                                                    <p className="w-full md:max-w-[700px] text-xl"> <span className="font-semibold">Use Cases:</span>  The restaurant chain can use TourMap to push real-time offers and promotions to tourists within specific postcode areas. For example, tourists visiting nearby landmarks can receive notifications about special deals available at the closest restaurant, increasing foot traffic and sales.</p>
+                                                </div>
+                                            </div>
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image className="md:col-span-5">
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/local-business.png" alt="local-business-image" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                            </FeatureCard.Body>
+                        </FeatureCard>
 
-                            <div className="grid grid-cols-12 gap-5 lg:gap-x-10 py-5">
-                                <div className="flex flex-col gap-4 rounded-lg w-full col-span-12 md:col-span-7">
-                                    <div className="w-full ">
-                                        <div className="flex items-start flex-wrap gap-3">
-                                            <h1 className="font-semibold w-full text-xl">Location-Based Marketing for Local Businesses</h1>
-                                            <p className="w-full md:max-w-[700px] text-xl"> <span className="font-semibold">Scenario:</span> A local restaurant chain wants to attract more tourists to its locations during peak travel seasons.</p>
-                                            <p className="w-full md:max-w-[700px] text-xl"> <span className="font-semibold">Use Cases:</span> The restaurant chain can use TourMap to push real-time offers and promotions to tourists within specific postcode areas. For example, tourists visiting nearby landmarks can receive notifications about special deals available at the closest restaurant, increasing foot traffic and sales.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="w-full col-span-12 md:col-span-4">
-                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
-                                </div>
-                            </div>
-
-                            <div className="grid grid-cols-12 gap-5 lg:gap-x-10 py-5">
-                                <div className="flex flex-col gap-4 rounded-lg w-full col-span-12 md:col-span-7">
-                                    <div className="w-full ">
-                                        <div className="flex items-start flex-wrap gap-3">
-                                            <h1 className="font-semibold w-full text-xl">Tourist Safety and Emergency Services</h1>
-                                            <p className="w-full md:max-w-[700px] text-xl"> <span className="font-semibold">Scenario:</span>  A tourism board wants to ensure the safety of visitors during festivals and other large events.</p>
-                                            <p className="w-full md:max-w-[700px] text-xl"> <span className="font-semibold">Use Cases:</span>  TourMap can be used to provide real-time safety updates, including alerts about crowded areas, weather warnings, or emergency service locations. Tourists can receive these updates directly through the tourism board's mobile app, helping them make informed decisions and stay safe.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="w-full col-span-12 md:col-span-4">
-                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
-                                </div>
-                            </div>
-
-
-                        </div>
+                        <FeatureCard>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle className="md:col-span-7">
+                                        <FeatureCard.Description>
+                                            <div className="w-full ">
+                                                <div className="flex items-start flex-wrap gap-3">
+                                                    <h1 className="font-semibold w-full text-xl text-neutral-90">Tourist Safety and Emergency Services</h1>
+                                                    <p className="w-full md:max-w-[700px] text-xl"> <span className="font-semibold">Scenario:</span> A tourism board wants to ensure the safety of visitors during festivals and other large events.</p>
+                                                    <p className="w-full md:max-w-[700px] text-xl"> <span className="font-semibold">Use Cases:</span> TourMap can be used to provide real-time safety updates, including alerts about crowded areas, weather warnings, or emergency service locations. Tourists can receive these updates directly through the tourism board's mobile app, helping them make informed decisions and stay safe.</p>
+                                                </div>
+                                            </div>
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image className="md:col-span-5">
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/emergency-alert.png" alt="emergency-alert-image" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                            </FeatureCard.Body>
+                        </FeatureCard>
 
                         {/* Free Tier */}
                         <Pricing>

@@ -1,5 +1,6 @@
 import Container from "../components/Container"
 import ActionCard from "../components/ui/ActionCard"
+import FeatureCard from "../components/ui/FeatureCard"
 import PageHero from "../components/ui/PageHero"
 import Pricing from "../components/ui/Pricing"
 
@@ -29,57 +30,93 @@ const NavOptix = () => {
                     </PageHero>
 
 
-                    <div className="w-full max-w-[1119px] mx-auto ">
-                        <div className="py-8">
-                            <h2 className="text-gray-800 mb-4">Features</h2>
-                            <div className="flex flex-col gap-8">
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
-                                    <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-2">Advanced Geocoding and Address Verification</h3>
-                                        <p className="text-gray-600 text-xl">Ensure that every journey starts on the right foot with NavOptix’s real-time address verification. By instantly validating and geocoding customer addresses, NavOptix minimizes the risk of delivery errors and missed pick-ups, keeping your operations smooth and reliable.</p>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
-                                    </div>
-                                </div>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
-                                    <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-2">Dynamic Route Optimization</h3>
-                                        <p className="text-gray-600 text-xl">Optimize your routes on the fly with NavOptix's powerful dynamic route optimization engine. Our technology adapts to real-time traffic conditions, road closures, and delivery demands, ensuring your drivers take the most efficient and cost-effective paths, every time.</p>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/audience.png" alt="audience" />
-                                    </div>
-                                </div>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
-                                    <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-2">Accurate ETA Calculations</h3>
-                                        <p className="text-gray-600 text-xl">Enhance customer experience with precise Estimated Time of Arrival (ETA) calculations. NavOptix uses real-time data to provide your customers with accurate ETAs, building trust and satisfaction through reliable service delivery.</p>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/billboard.png" alt="billboard" />
-                                    </div>
-                                </div>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
-                                    <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-2">Precise Pick-Up and Drop-Off Navigation</h3>
-                                        <p className="text-gray-600 text-xl">NavOptix guides your drivers to the exact pick-up and drop-off locations, minimizing delays and enhancing the overall efficiency of your operations. This feature is particularly vital for ride-hailing services where timing is everything.</p>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/billboard.png" alt="billboard" />
-                                    </div>
-                                </div>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
-                                    <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-2">Scalable Integration</h3>
-                                        <p className="text-gray-600 text-xl">Whether you're a startup or an established enterprise, NavOptix scales with your business. Our API is designed for easy integration, allowing you to effortlessly expand your operations without worrying about the complexities of logistics management.</p>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/billboard.png" alt="billboard" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div className="w-full max-w-[1119px] mx-auto">
+                        <FeatureCard>
+                            <FeatureCard.MainTitle>Features</FeatureCard.MainTitle>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Advanced Geocoding and Address Verification</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            Ensure that every journey starts on the right foot with NavOptix's real-time address verification. By instantly validating and geocoding customer addresses, NavOptix minimizes the risk of delivery errors and missed pick-ups, keeping your operations smooth and reliable.
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/site-selection.png" alt="site-selection-image" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                                <FeatureCard.Divider />
+                            </FeatureCard.Body>
+                        </FeatureCard>
+
+                        <FeatureCard>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Dynamic Route Optimization</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            Optimize your routes on the fly with NavOptix's powerful dynamic route optimization engine. Our technology adapts to real-time traffic conditions, road closures, and delivery demands, ensuring your drivers take the most efficient and cost-effective paths, every time.
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/optimization.png" alt="optimization-image" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                                <FeatureCard.Divider />
+                            </FeatureCard.Body>
+                        </FeatureCard>
+
+                        <FeatureCard>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Accurate ETA Calculations</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            Enhance customer experience with precise Estimated Time of Arrival (ETA) calculations. NavOptix uses real-time data to provide your customers with accurate ETAs, building trust and satisfaction through reliable service delivery.
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/eta-calculation.png" alt="eta-calculation-image" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                                <FeatureCard.Divider />
+                            </FeatureCard.Body>
+                        </FeatureCard>
+
+                        <FeatureCard>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Precise Pick-Up and Drop-Off Navigation</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            NavOptix guides your drivers to the exact pick-up and drop-off locations, minimizing delays and enhancing the overall efficiency of your operations. This feature is particularly vital for ride-hailing services where timing is everything.
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/pickup-location.png" alt="pickup-location-image" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                                <FeatureCard.Divider />
+                            </FeatureCard.Body>
+                        </FeatureCard>
+
+                        <FeatureCard>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Scalable Integration</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            Whether you're a startup or an established enterprise, NavOptix scales with your business. Our API is designed for easy integration, allowing you to effortlessly expand your operations without worrying about the complexities of logistics management.
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/integration.png" alt="integration-image" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                                <FeatureCard.Divider />
+                            </FeatureCard.Body>
+                        </FeatureCard>
+
 
                         <div className="py-8">
                             <h2 className="text-gray-800 mb-8 font-bold">WHY CHOOOSE NAVOPTIX?</h2>
@@ -103,50 +140,55 @@ const NavOptix = () => {
                             </div>
                         </div>
 
-                        {/* H */}
-                        <div className="w-full flex flex-col gap-4 ">
-                            <h3 className="text-lg font-semibold text-gray-800 mb-2">Use Cases</h3>
-                            <div className="grid grid-cols-12 gap-5 lg:gap-x-10 py-5">
-                                <div className="flex flex-col gap-4 rounded-lg w-full col-span-12 md:col-span-7">
-                                    <div className="w-full ">
-                                        <div className="flex items-start flex-wrap gap-3">
-                                            <h1 className="font-semibold w-full text-xl">E-Commerce and Delivery Services</h1>
-                                            <p className="w-full md:max-w-[700px] text-xl">Streamline your delivery processes with NavOptix's real-time address verification and dynamic route optimization, reducing operational costs while enhancing delivery accuracy and speed.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="w-full col-span-12 md:col-span-4">
-                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
-                                </div>
-                            </div>
-                            <div className="grid grid-cols-12 gap-5 lg:gap-x-10 py-5">
-                                <div className="flex flex-col gap-4 rounded-lg w-full col-span-12 md:col-span-7">
-                                    <div className="w-full ">
-                                        <div className="flex items-start flex-wrap gap-3">
-                                            <h1 className="font-semibold w-full text-xl">Ride-Hailing Services</h1>
-                                            <p className="w-full md:max-w-[700px] text-xl">Improve driver efficiency and customer satisfaction with precise navigation to pick-up and drop-off points, coupled with accurate ETAs that keep your customers informed and happy.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="w-full col-span-12 md:col-span-4">
-                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
-                                </div>
-                            </div>
-                            <div className="grid grid-cols-12 gap-5 lg:gap-x-10 py-5">
-                                <div className="flex flex-col gap-4 rounded-lg w-full col-span-12 md:col-span-7">
-                                    <div className="w-full ">
-                                        <div className="flex items-start flex-wrap gap-3">
-                                            <h1 className="font-semibold w-full text-xl">Logistics and Fleet Management</h1>
-                                            <p className="w-full md:max-w-[700px] text-xl">Optimize the performance of your entire fleet with NavOptix's scalable solutions, ensuring that your logistics operations run smoothly no matter how complex or extensive your network becomes.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="w-full col-span-12 md:col-span-4">
-                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
-                                </div>
-                            </div>
+                        {/* Use Cases */}
+                        <FeatureCard>
+                            <FeatureCard.MainTitle>Use Cases</FeatureCard.MainTitle>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>E-Commerce and Delivery Services</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            Streamline your delivery processes with NavOptix's real-time address verification and dynamic route optimization, reducing operational costs while enhancing delivery accuracy and speed.
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/verification.png" alt="verification-image" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                            </FeatureCard.Body>
+                        </FeatureCard>
 
-                        </div>
+                        <FeatureCard>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Ride-Hailing Services</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            Improve driver efficiency and customer satisfaction with precise navigation to pick-up and drop-off points, coupled with accurate ETAs that keep your customers informed and happy.
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ride-hailing.png" alt="ride-hailing-image" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                            </FeatureCard.Body>
+                        </FeatureCard>
+
+                        <FeatureCard>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Logistics and Fleet Management</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            Optimize the performance of your entire fleet with NavOptix’s scalable solutions, ensuring that your logistics operations run smoothly no matter how complex or extensive your network becomes.
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/delivery-optimization.png" alt="delivery-optimization-image" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                            </FeatureCard.Body>
+                        </FeatureCard>
 
 
                         {/* Free Tier */}

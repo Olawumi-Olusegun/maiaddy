@@ -1,5 +1,6 @@
 import Container from "../components/Container"
 import ActionCard from "../components/ui/ActionCard"
+import FeatureCard from "../components/ui/FeatureCard"
 import PageHero from "../components/ui/PageHero"
 import Pricing from "../components/ui/Pricing"
 
@@ -28,38 +29,59 @@ const AdReach = () => {
                     </PageHero>
 
                     <div className="w-full max-w-[1119px] mx-auto">
-                        <div className="">
-                            <h2 className="text-gray-800 mb-4">Features</h2>
-                            <div className="flex flex-col gap-8">
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
-                                    <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-2">Geo-Targeted Advertising</h3>
-                                        <p className="text-gray-600 text-xl">Deliver ads that are tailored to specific locations, ensuring that your message reaches the most relevant audience.</p>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px]">
+
+                        <FeatureCard>
+                            <FeatureCard.MainTitle>Features</FeatureCard.MainTitle>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Geo-Targeted Advertising</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            Deliver ads that are tailored to specific locations, ensuring that your message reaches the most relevant audience.
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
                                         <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
-                                    </div>
-                                </div>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
-                                    <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-2">Customer Segmentation</h3>
-                                        <p className="text-gray-600 text-xl">Use location data to segment your audience more effectively, creating personalized marketing campaigns that drive engagement.</p>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/audience.png" alt="audience" />
-                                    </div>
-                                </div>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
-                                    <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-2">Out-of-Home Optimization</h3>
-                                        <p className="text-gray-600 text-xl">Optimize the placement of billboards and other out-of-home advertising by analyzing traffic patterns and demographic data.</p>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px]">
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                                <FeatureCard.Divider />
+                            </FeatureCard.Body>
+                        </FeatureCard>
+
+                        <FeatureCard>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Geo-Targeted Advertising</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            Deliver ads that are tailored to specific locations, ensuring that your message reaches the most relevant audience.
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                                <FeatureCard.Divider />
+                            </FeatureCard.Body>
+                        </FeatureCard>
+
+                        <FeatureCard>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Out-of-Home Optimization</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            Optimize the placement of billboards and other out-of-home advertising by analyzing traffic patterns and demographic data.
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
                                         <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/billboard.png" alt="billboard" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                                <FeatureCard.Divider />
+                            </FeatureCard.Body>
+                        </FeatureCard>
+
 
                         <div className="py-8">
                             <h2 className="text-gray-800 mb-8 font-bold">WHY CHOOOSE ADREACH?</h2>
@@ -80,24 +102,27 @@ const AdReach = () => {
                         </div>
 
                         {/* Use Cases */}
-                        <div className=" w-full xl:max-w-[1011px] py-8">
-                            <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                <h3 className="text-lg font-semibold text-gray-800 mb-2">Use Cases</h3>
-                                <div className=" grid grid-cols-1 md:grid-cols-2 gap-5">
-                                    <div className="w-full max-w-[537px] ">
-                                        <ul className="list-disc">
-                                            <li className="text-neutral-80 text-xl">Advertising agencies looking to enhance the precision of their geo-targeted campaigns.</li>
-                                            <li className="text-neutral-80 text-xl">Marketing firms aiming to improve customer segmentation and ad relevance.</li>
-                                            <li className="text-neutral-80 text-xl">Brands seeking to optimize out-of-home advertising for maximum visibility and impact.</li>
-                                        </ul>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px] ml-auto">
+                        <FeatureCard>
+                            <FeatureCard.MainTitle className="text-lg font-semibold  text-primary-70 mb-5">Use Cases</FeatureCard.MainTitle>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle className="md:col-span-7">
+                                        <FeatureCard.Description>
+                                            <ul className="list-disc">
+                                                <li className="text-neutral-80 text-xl">Advertising agencies looking to enhance the precision of their geo-targeted campaigns.</li>
+                                                <li className="text-neutral-80 text-xl">Marketing firms aiming to improve customer segmentation and ad relevance.</li>
+                                                <li className="text-neutral-80 text-xl">Brands seeking to optimize out-of-home advertising for maximum visibility and impact.</li>
+                                            </ul>
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image className="md:col-span-5">
                                         <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/marketing.png" alt="marketing-image" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                            </FeatureCard.Body>
+                        </FeatureCard>
 
+                        {/* PRICING SECTION */}
                         {/* Free Tier */}
                         <Pricing>
                             <Pricing.MainTitle>PRICING</Pricing.MainTitle>

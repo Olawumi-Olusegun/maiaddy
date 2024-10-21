@@ -30,14 +30,14 @@ function App() {
           <Route element={<RootLayout />}>
 
             <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/about-us" element={<About />} />
             <Route path="/contact-us" element={<Contact />} />
             <Route path="/careers" element={<Career />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-use" element={<TermsOfUse />} />
 
             <Route element={<CoreLayout />}>
-              <Route path="/adreach" element={<AdReach />} />
+              <Route path="/ad-reach" element={<AdReach />} />
               <Route path="/utility-net" element={<UtilityNet />} />
               <Route path="/cell-grid" element={<CellGrid />} />
               <Route path="/secure-site" element={<SecureSite />} />

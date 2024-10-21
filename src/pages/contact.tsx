@@ -31,8 +31,6 @@ const Contact = () => {
 
             </Container>
 
-
-            {/* <img src="https://i.imgur.com/G48R5iB.png" alt="Maiddy Logo" className="w-48 h-48 mx-auto mb-8"></img> */}
         </section>
     )
 }

@@ -1,5 +1,6 @@
 import Container from "../components/Container"
 import ActionCard from "../components/ui/ActionCard"
+import FeatureCard from "../components/ui/FeatureCard"
 import PageHero from "../components/ui/PageHero"
 import Pricing from "../components/ui/Pricing"
 
@@ -27,25 +28,48 @@ const RealSight = () => {
                     </PageHero>
 
 
-                    <div className="w-full max-w-[1119px] mx-auto ">
+                    <div className="w-full max-w-[1119px] mx-auto">
+                        <FeatureCard>
+                            <FeatureCard.MainTitle>Features</FeatureCard.MainTitle>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Accurate Property Valuation</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            <ul className="list-disc space-y-3">
+                                                <li className="text-neutral-80 text-xl">Location-Based Valuation Models: Utilize advanced algorithms that consider postcode-specific factors, such as local amenities, historical sales data, and demographic trends, to deliver precise property valuations.</li>
+                                                <li className="text-neutral-80 text-xl">Real-Time Market Data: Access real-time data on property prices, market movements, and buyer demand, allowing you to make timely and informed investment decisions.</li>
+                                                <li className="text-neutral-80 text-xl">Custom Valuation Tools: Tailor valuation models to specific property types, from residential to commercial real estate, ensuring accuracy across different market segments.</li>
+                                            </ul>
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/verification.png" alt="verification-image" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                                <FeatureCard.Divider />
+                            </FeatureCard.Body>
+                        </FeatureCard>
+
+
                         <div className="py-8">
-                            <h2 className="text-gray-800 mb-4">Features</h2>
+                            {/* <h2 className="text-gray-800 mb-4">Features</h2> */}
                             <div className="flex flex-col gap-8">
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
+                                {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
                                     <div className="flex flex-col gap-4 rounded-lg w-full ">
                                         <h3 className="text-xl font-bold text-gray-800 mb-2">Accurate Property Valuation</h3>
                                         <div className="w-full">
                                             <ul className="list-disc space-y-4">
-                                                <li className="text-lg">Location-Based Valuation Models: Utilize advanced algorithms that consider postcode-specific factors, such as local amenities, historical sales data, and demographic trends, to deliver precise property valuations.</li>
-                                                <li className="text-lg">Real-Time Market Data: Access real-time data on property prices, market movements, and buyer demand, allowing you to make timely and informed investment decisions.</li>
-                                                <li className="text-lg">Custom Valuation Tools: Tailor valuation models to specific property types, from residential to commercial real estate, ensuring accuracy across different market segments.</li>
+                                                <li className="text-neutral-80 text-xl">Location-Based Valuation Models: Utilize advanced algorithms that consider postcode-specific factors, such as local amenities, historical sales data, and demographic trends, to deliver precise property valuations.</li>
+                                                <li className="text-neutral-80 text-xl">Real-Time Market Data: Access real-time data on property prices, market movements, and buyer demand, allowing you to make timely and informed investment decisions.</li>
+                                                <li className="text-neutral-80 text-xl">Custom Valuation Tools: Tailor valuation models to specific property types, from residential to commercial real estate, ensuring accuracy across different market segments.</li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div className="w-full lg:max-w-[371px]">
                                         <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
                                     </div>
-                                </div>
+                                </div> */}
 
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
                                     <div className="flex flex-col gap-4 rounded-lg w-full ">

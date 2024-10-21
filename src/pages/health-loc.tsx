@@ -1,5 +1,6 @@
 import Container from "../components/Container"
 import ActionCard from "../components/ui/ActionCard"
+import FeatureCard from "../components/ui/FeatureCard"
 import PageHero from "../components/ui/PageHero"
 import Pricing from "../components/ui/Pricing"
 
@@ -27,92 +28,113 @@ const HealthLoc = () => {
                     </PageHero>
 
 
-                    <div className="w-full max-w-[1119px] mx-auto ">
-                        <div className="py-8">
-                            <h2 className="text-gray-800 mb-4">Features</h2>
-                            <div className="flex flex-col gap-8">
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
-                                    <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-2">Accurate Patient Address Verification</h3>
-                                        <div className="w-full">
-                                            <ul className="list-disc space-y-4">
-                                                <li className="text-lg">Enhanced Home Care Services: HealthLoc ensures that patient addresses are accurately verified, reducing the risk of missed appointments and ensuring that healthcare professionals reach the correct location every time.</li>
-                                                <li className="text-lg"> Seamless Integration: Easily integrate HealthLoc's verification tools into your existing patient management systems, improving operational efficiency and reducing administrative overhead.</li>
-                                                <li className="text-lg">Data Integrity: Maintain the highest standards of data accuracy, helping you comply with regulatory requirements and protect patient privacy.</li>
+                    <div className="w-full max-w-[1119px] mx-auto">
+                        <FeatureCard>
+                            <FeatureCard.MainTitle>Features</FeatureCard.MainTitle>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Accurate Patient Address Verification</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            <ul className="list-disc space-y-3">
+                                                <li className="text-neutral-80 text-xl">Enhanced Home Care Services: HealthLoc ensures that patient addresses are accurately verified, reducing the risk of missed appointments and ensuring that healthcare professionals reach the correct location every time.</li>
+                                                <li className="text-neutral-80 text-xl">Seamless Integration: Easily integrate HealthLoc's verification tools into your existing patient management systems, improving operational efficiency and reducing administrative overhead.</li>
+                                                <li className="text-neutral-80 text-xl">Data Integrity: Maintain the highest standards of data accuracy, helping you comply with regulatory requirements and protect patient privacy.</li>
                                             </ul>
-                                        </div>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
-                                    </div>
-                                </div>
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/verification.png" alt="verification-image" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                                <FeatureCard.Divider />
+                            </FeatureCard.Body>
+                        </FeatureCard>
 
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
-                                    <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-2">Optimized Emergency Response</h3>
-                                        <div className="w-full">
-                                            <ul className="list-disc space-y-4">
-                                                <li className="text-lg"> Real-Time Route Optimization: HealthLoc provides real-time route optimization for emergency vehicles, ensuring the fastest possible response times to critical incidents.</li>
-                                                <li className="text-lg"> Precise Location Data: Utilize precise location data to pinpoint the exact location of patients in need, even in densely populated or rural areas where traditional systems may struggle.</li>
-                                                <li className="text-lg"> Emergency Resource Allocation: Improve the allocation of emergency resources by analyzing location data to identify high-risk areas and optimize the distribution of ambulances and other emergency services.</li>
+                        <FeatureCard>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Optimized Emergency Response</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            <ul className="list-disc space-y-3">
+                                                <li className="text-neutral-80 text-xl">Real-Time Route Optimization: HealthLoc provides real-time route optimization for emergency vehicles, ensuring the fastest possible response times to critical incidents.</li>
+                                                <li className="text-neutral-80 text-xl">Precise Location Data: Utilize precise location data to pinpoint the exact location of patients in need, even in densely populated or rural areas where traditional systems may struggle.</li>
+                                                <li className="text-neutral-80 text-xl">Emergency Resource Allocation: Improve the allocation of emergency resources by analyzing location data to identify high-risk areas and optimize the distribution of ambulances and other emergency services.</li>
                                             </ul>
-                                        </div>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
-                                    </div>
-                                </div>
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/emergency-response.png" alt="emergency-response" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                                <FeatureCard.Divider />
+                            </FeatureCard.Body>
+                        </FeatureCard>
 
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
-                                    <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-2">Comprehensive Health Service Coverage Analysis</h3>
-                                        <div className="w-full">
-                                            <ul className="list-disc space-y-4">
-                                                <li className="text-lg"> Health Service Planning: Use HealthLoc to conduct detailed analysis of healthcare service coverage, ensuring that facilities are optimally located to serve communities effectively.</li>
-                                                <li className="text-lg"> Gap Analysis: Identify areas with insufficient healthcare coverage and make data-driven decisions to expand services where they are most needed.</li>
-                                                <li className="text-lg"> Resource Optimization: Optimize the deployment of healthcare resources, from medical staff to equipment, based on location-specific data and population health trends.</li>
+                        <FeatureCard>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Comprehensive Health Service Coverage Analysis</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            <ul className="list-disc space-y-3">
+                                                <li className="text-neutral-80 text-xl">Health Service Planning: Use HealthLoc to conduct detailed analysis of healthcare service coverage, ensuring that facilities are optimally located to serve communities effectively.</li>
+                                                <li className="text-neutral-80 text-xl"> Gap Analysis: Identify areas with insufficient healthcare coverage and make data-driven decisions to expand services where they are most needed.</li>
+                                                <li className="text-neutral-80 text-xl"> Resource Optimization: Optimize the deployment of healthcare resources, from medical staff to equipment, based on location-specific data and population health trends.</li>
                                             </ul>
-                                        </div>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
-                                    </div>
-                                </div>
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/health-coverage.png" alt="health-coverage-image" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                                <FeatureCard.Divider />
+                            </FeatureCard.Body>
+                        </FeatureCard>
 
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
-                                    <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-2">Tailored Solutions for Healthcare Providers</h3>
-                                        <div className="w-full">
-                                            <ul className="list-disc space-y-4">
-                                                <li className="text-lg"> Customized Tools: HealthLoc offers a suite of customizable tools that cater to the specific needs of different healthcare providers, whether you're running a large hospital, a small clinic, or an emergency response team.</li>
-                                                <li className="text-lg"> Patient Outreach: Enhance patient outreach programs by using precise location data to target underserved populations and improve healthcare access.</li>
-                                                <li className="text-lg"> Health Risk Mapping: Map and analyze health risks based on geographical data, allowing for proactive management of public health concerns.</li>
+                        <FeatureCard>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Tailored Solutions for Healthcare Providers</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            <ul className="list-disc space-y-3">
+                                                <li className="text-neutral-80 text-xl">Customized Tools: HealthLoc offers a suite of customizable tools that cater to the specific needs of different healthcare providers, whether you're running a large hospital, a small clinic, or an emergency response team.</li>
+                                                <li className="text-neutral-80 text-xl">Patient Outreach: Enhance patient outreach programs by using precise location data to target underserved populations and improve healthcare access.</li>
+                                                <li className="text-neutral-80 text-xl">Health Risk Mapping: Map and analyze health risks based on geographical data, allowing for proactive management of public health concerns.</li>
                                             </ul>
-                                        </div>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
-                                    </div>
-                                </div>
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/healthcare-providers.png" alt="healthcare-providers-image" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                                <FeatureCard.Divider />
+                            </FeatureCard.Body>
+                        </FeatureCard>
 
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
-                                    <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-2">Streamlined Healthcare Operations</h3>
-                                        <div className="w-full">
-                                            <ul className="list-disc space-y-4">
-                                                <li className="text-lg"> Operational Efficiency: Streamline your healthcare operations with integrated location services that reduce the time and effort required to manage patient logistics, appointment scheduling, and service delivery.</li>
-                                                <li className="text-lg"> Data-Driven Decision Making: Empower your team with the data needed to make informed, strategic decisions that improve patient outcomes and operational efficiency</li>
-                                                <li className="text-lg"> Scalable Solutions: Whether you're a local clinic or a nationwide healthcare provider, HealthLoc scales to meet your needs, providing reliable and accurate location intelligence at every level</li>
+
+                        <FeatureCard>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Streamlined Healthcare Operations</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            <ul className="list-disc space-y-3">
+                                                <li className="text-neutral-80 text-xl">Operational Efficiency: Streamline your healthcare operations with integrated location services that reduce the time and effort required to manage patient logistics, appointment scheduling, and service delivery.</li>
+                                                <li className="text-neutral-80 text-xl">Data-Driven Decision Making: Empower your team with the data needed to make informed, strategic decisions that improve patient outcomes and operational efficiency</li>
+                                                <li className="text-neutral-80 text-xl">Scalable Solutions: Whether you're a local clinic or a nationwide healthcare provider, HealthLoc scales to meet your needs, providing reliable and accurate location intelligence at every level</li>
                                             </ul>
-                                        </div>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/healthcare-operation.png" alt="healthcare-operation-image" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                                <FeatureCard.Divider />
+                            </FeatureCard.Body>
+                        </FeatureCard>
 
                         <div className="py-8">
                             <h2 className="text-gray-800 mb-8 font-bold">WHY CHOOSE HEALTHLOC?</h2>
@@ -163,67 +185,70 @@ const HealthLoc = () => {
                             </div>
                         </div>
 
-                        {/* H */}
-                        <div className="w-full flex flex-col gap-4 ">
-                            <h3 className="text-lg font-semibold text-gray-800 mb-2">Use Cases</h3>
-                            <div className="grid grid-cols-12 gap-5 lg:gap-x-10 py-5">
-                                <div className="flex flex-col gap-4 rounded-lg w-full col-span-12 md:col-span-7">
-                                    <div className="w-full ">
-                                        <div className="flex items-start flex-wrap gap-3">
-                                            <h1 className="font-semibold w-full text-xl">Home Care Services</h1>
-                                            <p className="w-full md:max-w-[700px] text-xl"> Improve the efficiency and accuracy of home care visits with precise address verification and optimized routing for healthcare providers</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="w-full col-span-12 md:col-span-4">
-                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
-                                </div>
-                            </div>
+                        <FeatureCard>
+                            <FeatureCard.MainTitle>Use Cases</FeatureCard.MainTitle>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Home Care Services</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            Improve the efficiency and accuracy of home care visits with precise address verification and optimized routing for healthcare providers
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/homecare-services.png" alt="homecare-services" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                            </FeatureCard.Body>
+                        </FeatureCard>
 
-                            <div className="grid grid-cols-12 gap-5 lg:gap-x-10 py-5">
-                                <div className="flex flex-col gap-4 rounded-lg w-full col-span-12 md:col-span-7">
-                                    <div className="w-full">
-                                        <div className="flex items-start flex-wrap gap-3">
-                                            <h1 className="font-semibold w-full text-xl">Emergency Response</h1>
-                                            <p className="w-full md:max-w-[700px] text-xl"> Reduce response times and improve patient outcomes by leveraging real-time route optimization and precise location data for emergency services.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="w-full col-span-12 md:col-span-4">
-                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
-                                </div>
-                            </div>
+                        <FeatureCard>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Emergency Response</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            Reduce response times and improve patient outcomes by leveraging real-time route optimization and precise location data for emergency services.
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/emergency-response.png" alt="emergency-response" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                            </FeatureCard.Body>
+                        </FeatureCard>
 
-                            <div className="grid grid-cols-12 gap-5 lg:gap-x-10 py-5">
-                                <div className="flex flex-col gap-4 rounded-lg w-full col-span-12 md:col-span-7">
-                                    <div className="w-full ">
-                                        <div className="flex items-start flex-wrap gap-3">
-                                            <h1 className="font-semibold w-full text-xl">Healthcare Service Planning</h1>
-                                            <p className="w-full md:max-w-[700px] text-xl"> Ensure that healthcare services are strategically located and accessible to all populations by analyzing service coverage and identifying gaps in care.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="w-full col-span-12 md:col-span-4">
-                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
-                                </div>
-                            </div>
+                        <FeatureCard>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Healthcare Service Planning</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            Ensure that healthcare services are strategically located and accessible to all populations by analyzing service coverage and identifying gaps in care.
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/healthcare-planning.png" alt="healthcare-planning" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                            </FeatureCard.Body>
+                        </FeatureCard>
 
-                            <div className="grid grid-cols-12 gap-5 lg:gap-x-10 py-5">
-                                <div className="flex flex-col gap-4 rounded-lg w-full col-span-12 md:col-span-7">
-                                    <div className="w-full ">
-                                        <div className="flex items-start flex-wrap gap-3">
-                                            <h1 className="font-semibold w-full text-xl">Patient Outreach and Public Health</h1>
-                                            <p className="w-full md:max-w-[700px] text-xl"> Enhance outreach efforts and public health initiatives by targeting specific areas based on accurate location data and population health trends.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="w-full col-span-12 md:col-span-4">
-                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
-                                </div>
-                            </div>
-
-
-                        </div>
+                        <FeatureCard>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Patient Outreach and Public Health</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            Enhance outreach efforts and public health initiatives by targeting specific areas based on accurate location data and population health trends.
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/healthcare-outreach.png" alt="healthcare-outreach-image" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                            </FeatureCard.Body>
+                        </FeatureCard>
 
                         {/* Free Tier */}
                         <Pricing>

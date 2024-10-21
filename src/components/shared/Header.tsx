@@ -36,10 +36,9 @@ const Header = () => {
                             strokeLinecap="round"
                             strokeLinejoin="round"
                             strokeWidth="2"
-                            d={
-                                isMenuOpen
-                                    ? "M6 18L18 6M6 6l12 12" // Close icon
-                                    : "M4 6h16M4 12h16M4 18h16" // Hamburger icon
+                            d={isMenuOpen
+                                ? "M6 18L18 6M6 6l12 12"
+                                : "M4 6h16M4 12h16M4 18h16"
                             }
                         />
                     </svg>
@@ -48,10 +47,10 @@ const Header = () => {
                 {/* Desktop nav list */}
                 <ul className="hidden lg:flex items-center gap-3">
                     <li className="text-neutral-700 text-base font-medium">
-                        <Link to={"/about"}>About Us</Link>
+                        <Link to={"/about-us"}>About Us</Link>
                     </li>
                     <li className="text-neutral-700 text-base font-medium">
-                        <Link to={"/about"}>Solutions</Link>
+                        <Link to={"/solutions"}>Solutions</Link>
                     </li>
                     <li className="text-neutral-700 text-base font-medium">
                         <Link to={"/careers"}>Careers</Link>
@@ -87,7 +86,7 @@ const Header = () => {
                     </Link>
                     <ul className="flex flex-col space-y-5">
                         <li className="text-neutral-700 text-base font-medium">
-                            <Link to={"/about"} onClick={toggleMenu}>About Us</Link>
+                            <Link to={"/about-us"} onClick={toggleMenu}>About Us</Link>
                         </li>
                         <li className="text-neutral-700 text-base font-medium">
                             <Link to={"/solutions"} onClick={toggleMenu}>Solutions</Link>

@@ -1,5 +1,6 @@
 import Container from "../components/Container"
 import ActionCard from "../components/ui/ActionCard"
+import FeatureCard from "../components/ui/FeatureCard"
 import PageHero from "../components/ui/PageHero"
 import Pricing from "../components/ui/Pricing"
 
@@ -27,39 +28,60 @@ const UtilityNet = () => {
                         </PageHero.Body>
                     </PageHero>
 
-                    <div className="w-full max-w-[1119px] mx-auto ">
-                        <div className="py-8">
-                            <h2 className="text-gray-800 mb-4">Features</h2>
-                            <div className="flex flex-col gap-8">
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
-                                    <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-2">Address</h3>
-                                        <p className="text-gray-600 text-xl">Ensure that every service address is correct, reducing errors and improving customer satisfaction.</p>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px]">
+                    <div className="w-full max-w-[1119px] mx-auto">
+
+                        <FeatureCard>
+                            <FeatureCard.MainTitle>Features</FeatureCard.MainTitle>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Service Address Verification</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            Ensure that every service address is correct, reducing errors and improving customer satisfaction.
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
                                         <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
-                                    </div>
-                                </div>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
-                                    <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-2">Infrastructure Planning</h3>
-                                        <p className="text-gray-600 text-xl">Use precise geospatial data to plan and optimize the placement of utility infrastructure, from power lines to water pipes.</p>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px]">
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                                <FeatureCard.Divider />
+                            </FeatureCard.Body>
+                        </FeatureCard>
+
+                        <FeatureCard>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Infrastructure Planning</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            Use precise geospatial data to plan and optimize the placement of utility infrastructure, from power lines to water pipes.
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
                                         <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/audience.png" alt="audience" />
-                                    </div>
-                                </div>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
-                                    <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-2">Outage Response Optimization</h3>
-                                        <p className="text-gray-600 text-xl">Respond to outages faster with precise location data, improving response times and reducing downtime for customers.</p>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px]">
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                                <FeatureCard.Divider />
+                            </FeatureCard.Body>
+                        </FeatureCard>
+
+                        <FeatureCard>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Outage Response Optimization</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            Respond to outages faster with precise location data, improving response times and reducing downtime for customers.
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
                                         <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/billboard.png" alt="billboard" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                                <FeatureCard.Divider />
+                            </FeatureCard.Body>
+                        </FeatureCard>
+
 
                         <div className="py-8">
                             <h2 className="text-gray-800 mb-8 font-bold">WHY CHOOOSE UTILITYNET?</h2>
@@ -79,22 +101,26 @@ const UtilityNet = () => {
                             </div>
                         </div>
 
-                        {/* H */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-5  py-10">
-                            <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                <h3 className="text-lg font-semibold text-gray-800 mb-2">Use Cases</h3>
-                                <div className="w-full">
-                                    <ul className="list-disc">
-                                        <li>Utility companies planning new infrastructure projects or upgrading existing systems.</li>
-                                        <li>Service providers looking to improve response times and customer satisfaction.</li>
-                                        <li>Utilities aiming to reduce operational costs through precise location intelligence.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="w-full lg:w-[371px]">
-                                <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
-                            </div>
-                        </div>
+                        {/* Use Cases */}
+                        <FeatureCard>
+                            <FeatureCard.MainTitle className="text-lg font-semibold  text-primary-70 mb-5">Use Cases</FeatureCard.MainTitle>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle className="md:col-span-7">
+                                        <FeatureCard.Description>
+                                            <ul className="list-disc">
+                                                <li className="text-neutral-80 text-xl">Advertising agencies looking to enhance the precision of their geo-targeted campaigns.</li>
+                                                <li className="text-neutral-80 text-xl">Marketing firms aiming to improve customer segmentation and ad relevance.</li>
+                                                <li className="text-neutral-80 text-xl">Brands seeking to optimize out-of-home advertising for maximum visibility and impact.</li>
+                                            </ul>
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image className="md:col-span-5">
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/billboard.png" alt="billboard" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                            </FeatureCard.Body>
+                        </FeatureCard>
 
 
                         {/* Free Tier */}

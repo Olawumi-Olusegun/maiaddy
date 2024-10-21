@@ -1,5 +1,6 @@
 import Container from "../components/Container"
 import ActionCard from "../components/ui/ActionCard"
+import FeatureCard from "../components/ui/FeatureCard"
 import PageHero from "../components/ui/PageHero"
 import Pricing from "../components/ui/Pricing"
 
@@ -27,39 +28,59 @@ const ShopStop = () => {
                     </PageHero>
 
 
-                    <div className="w-full max-w-[1119px] mx-auto ">
-                        <div className="py-8">
-                            <h2 className="text-gray-800 mb-4">Features</h2>
-                            <div className="flex flex-col gap-8">
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
-                                    <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-2">Site Selection</h3>
-                                        <p className="text-gray-600 text-xl">Identify prime locations for new stores with data-driven insights into foot traffic, demographics, and competitive analysis.</p>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
-                                    </div>
-                                </div>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
-                                    <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-2">Catchment Area Analysis</h3>
-                                        <p className="text-gray-600 text-xl">Understand your customer base better by analyzing the catchment areas around your stores, helping you tailor your offerings to local needs.</p>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/audience.png" alt="audience" />
-                                    </div>
-                                </div>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
-                                    <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-2"> Delivery Optimization</h3>
-                                        <p className="text-gray-600 text-xl">Optimize delivery routes and logistics to ensure your stores operate efficiently and serve customers effectively.</p>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/billboard.png" alt="billboard" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div className="w-full max-w-[1119px] mx-auto">
+
+                        <FeatureCard>
+                            <FeatureCard.MainTitle>Features</FeatureCard.MainTitle>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Site Selection</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            Identify prime locations for new stores with data-driven insights into foot traffic, demographics, and competitive analysis.
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/site-selection.png" alt="site-selection-image" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                                <FeatureCard.Divider />
+                            </FeatureCard.Body>
+                        </FeatureCard>
+
+                        <FeatureCard>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Catchment Area Analysis</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            Understand your customer base better by analyzing the catchment areas around your stores, helping you tailor your offerings to local needs.
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/catchment-areas.png" alt="catchment-areas-image" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                                <FeatureCard.Divider />
+                            </FeatureCard.Body>
+                        </FeatureCard>
+
+                        <FeatureCard>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Delivery Optimization</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            Optimize delivery routes and logistics to ensure your stores operate efficiently and serve customers effectively.
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/delivery-optimization.png" alt="delivery-optimization-image" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                                <FeatureCard.Divider />
+                            </FeatureCard.Body>
+                        </FeatureCard>
 
                         <div className="py-8">
                             <h2 className="text-gray-800 mb-8 font-bold">WHY CHOOSE SHOPSPOT?</h2>
@@ -79,22 +100,26 @@ const ShopStop = () => {
                             </div>
                         </div>
 
-                        {/* H */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-5  py-10">
-                            <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                <h3 className="text-lg font-semibold text-gray-800 mb-2">Use Cases</h3>
-                                <div className="w-full">
-                                    <ul className="list-disc space-y-4">
-                                        <li className="text-lg"> Retail chains planning to expand and open new locations.</li>
-                                        <li className="text-lg">Store managers seeking to optimize operations and improve customer service.</li>
-                                        <li className="text-lg">Retailers aiming to understand their customer base better and tailor their offerings accordingly.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="w-full lg:w-[371px]">
-                                <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
-                            </div>
-                        </div>
+                        {/* Use Cases */}
+                        <FeatureCard>
+                            <FeatureCard.MainTitle>Use Cases</FeatureCard.MainTitle>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle className="md:col-span-7">
+                                        <FeatureCard.Description>
+                                            <ul className="list-disc space-y-3">
+                                                <li className="text-neutral-80 text-xl"> Retail chains planning to expand and open new locations.</li>
+                                                <li className="text-neutral-80 text-xl">Store managers seeking to optimize operations and improve customer service.</li>
+                                                <li className="text-neutral-80 text-xl">Retailers aiming to understand their customer base better and tailor their offerings accordingly.</li>
+                                            </ul>
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image className="md:col-span-5">
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/chain-planning.png" alt="chain-planning-image" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                            </FeatureCard.Body>
+                        </FeatureCard>
 
                         {/* Free Tier */}
                         <Pricing>

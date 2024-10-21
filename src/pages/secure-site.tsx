@@ -1,5 +1,6 @@
 import Container from "../components/Container"
 import ActionCard from "../components/ui/ActionCard"
+import FeatureCard from "../components/ui/FeatureCard"
 import PageHero from "../components/ui/PageHero"
 import Pricing from "../components/ui/Pricing"
 
@@ -27,39 +28,59 @@ const SecureSite = () => {
                     </PageHero>
 
 
-                    <div className="w-full max-w-[1119px] mx-auto ">
-                        <div className="py-8">
-                            <h2 className="text-gray-800 mb-4">Features</h2>
-                            <div className="flex flex-col gap-8">
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
-                                    <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-2">Advanced Address Verification</h3>
-                                        <p className="text-gray-600 text-xl">Ensure that every client's location is accurately verified, reducing the risk of fraud and enhancing compliance with regulatory requirements.</p>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
-                                    </div>
-                                </div>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
-                                    <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-2">Fraud Detection</h3>
-                                        <p className="text-gray-600 text-xl">Use precise location data to detect anomalies and prevent fraud before it happens, protecting your institution and your clients.</p>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/audience.png" alt="audience" />
-                                    </div>
-                                </div>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
-                                    <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-2">Branch & ATM Optimization</h3>
-                                        <p className="text-gray-600 text-xl">Optimize the placement of branches and ATMs to serve your customers better while maximizing reach and minimizing costs.</p>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/billboard.png" alt="billboard" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div className="w-full max-w-[1119px] mx-auto">
+
+                        <FeatureCard>
+                            <FeatureCard.MainTitle>Features</FeatureCard.MainTitle>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Advanced Address Verification</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            Ensure that every client's location is accurately verified, reducing the risk of fraud and enhancing compliance with regulatory requirements.
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/verification.png" alt="verification-image" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                                <FeatureCard.Divider />
+                            </FeatureCard.Body>
+                        </FeatureCard>
+
+                        <FeatureCard>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Fraud Detection</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            Use precise location data to detect anomalies and prevent fraud before it happens, protecting your institution and your clients.
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/atm-machine.png" alt="atm-machine" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                                <FeatureCard.Divider />
+                            </FeatureCard.Body>
+                        </FeatureCard>
+
+                        <FeatureCard>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle>
+                                        <FeatureCard.Title>Branch & ATM Optimization</FeatureCard.Title>
+                                        <FeatureCard.Description>
+                                            Optimize the placement of branches and ATMs to serve your customers better while maximizing reach and minimizing costs.
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image>
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/atm-machine.png" alt="atm-machine" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                                <FeatureCard.Divider />
+                            </FeatureCard.Body>
+                        </FeatureCard>
 
                         <div className="py-8">
                             <h2 className="text-gray-800 mb-8 font-bold">WHY CHOOSE SECURESITE?</h2>
@@ -79,22 +100,27 @@ const SecureSite = () => {
                             </div>
                         </div>
 
-                        {/* H */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-5  py-10">
-                            <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                <h3 className="text-lg font-semibold text-gray-800 mb-2">Use Cases</h3>
-                                <div className="w-full">
-                                    <ul className="list-disc space-y-4">
-                                        <li className="text-lg"> Banks enhancing their KYC processes to reduce fraud and comply with regulations.</li>
-                                        <li className="text-lg">Financial institutions optimising the placement of branches and ATMs</li>
-                                        <li className="text-lg">Credit providers verifying client locations to reduce the risk of default and fraud.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="w-full lg:w-[371px]">
-                                <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
-                            </div>
-                        </div>
+                        {/* Use Cases */}
+                        <FeatureCard>
+                            <FeatureCard.MainTitle className="text-lg font-semibold  text-primary-70 mb-5">Use Cases</FeatureCard.MainTitle>
+                            <FeatureCard.Body>
+                                <FeatureCard.Grid>
+                                    <FeatureCard.GridArticle className="md:col-span-7">
+                                        <FeatureCard.Description>
+                                            <ul className="list-disc space-y-3">
+                                                <li className="text-neutral-80 text-xl"> Banks enhancing their KYC processes to reduce fraud and comply with regulations.</li>
+                                                <li className="text-neutral-80 text-xl">Financial institutions optimising the placement of branches and ATMs</li>
+                                                <li className="text-neutral-80 text-xl">Credit providers verifying client locations to reduce the risk of default and fraud.</li>
+                                            </ul>
+                                        </FeatureCard.Description>
+                                    </FeatureCard.GridArticle>
+                                    <FeatureCard.Image className="md:col-span-5">
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/kyc.png" alt="kyc-image" />
+                                    </FeatureCard.Image>
+                                </FeatureCard.Grid>
+                            </FeatureCard.Body>
+                        </FeatureCard>
+
 
 
                         {/* Free Tier */}

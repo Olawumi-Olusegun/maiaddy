@@ -47,9 +47,9 @@ const HomePage = () => {
                                         <path d="M0 18H20V20H0V18ZM2 10H4V17H2V10ZM7 10H9V17H7V10ZM11 10H13V17H11V10ZM16 10H18V17H16V10ZM0 5L10 0L20 5V9H0V5ZM2 6.236V7H18V6.236L10 2.236L2 6.236ZM10 6C9.73478 6 9.48043 5.89464 9.29289 5.70711C9.10536 5.51957 9 5.26522 9 5C9 4.73478 9.10536 4.48043 9.29289 4.29289C9.48043 4.10536 9.73478 4 10 4C10.2652 4 10.5196 4.10536 10.7071 4.29289C10.8946 4.48043 11 4.73478 11 5C11 5.26522 10.8946 5.51957 10.7071 5.70711C10.5196 5.89464 10.2652 6 10 6Z" fill="#336699" />
                                     </svg>
                                 </ServicesCard.Icon>
-                                <ServicesCard.Title>Insurance</ServicesCard.Title>
+                                <ServicesCard.Title>Financial services</ServicesCard.Title>
                                 <ServicesCard.Description>Use location intelligence for financial security with SecureSite.</ServicesCard.Description>
-                                <ServicesCard.LinkHref to="#">
+                                <ServicesCard.LinkHref to="/secure-site">
                                     Learn more
                                 </ServicesCard.LinkHref>
                             </ServicesCard.Body>
@@ -65,7 +65,7 @@ const HomePage = () => {
                                 </ServicesCard.Icon>
                                 <ServicesCard.Title>Insurance</ServicesCard.Title>
                                 <ServicesCard.Description>Get advanced location intelligence for risk assessment with InsurSight.</ServicesCard.Description>
-                                <ServicesCard.LinkHref to="#">
+                                <ServicesCard.LinkHref to="/insur-sight">
                                     Learn more
                                 </ServicesCard.LinkHref>
                             </ServicesCard.Body>
@@ -80,7 +80,7 @@ const HomePage = () => {
                                 </ServicesCard.Icon>
                                 <ServicesCard.Title>Telecoms</ServicesCard.Title>
                                 <ServicesCard.Description>Infuse precision planning into Telecoms with CellGrid.</ServicesCard.Description>
-                                <ServicesCard.LinkHref to="#">
+                                <ServicesCard.LinkHref to="/cell-grid">
                                     Learn more
                                 </ServicesCard.LinkHref>
                             </ServicesCard.Body>
@@ -95,7 +95,7 @@ const HomePage = () => {
                                 </ServicesCard.Icon>
                                 <ServicesCard.Title>Health</ServicesCard.Title>
                                 <ServicesCard.Description>Deliver Healthcare with Precision LocationIntelligence using HealthLoc.</ServicesCard.Description>
-                                <ServicesCard.LinkHref to="#">
+                                <ServicesCard.LinkHref to="/health-loc">
                                     Learn more
                                 </ServicesCard.LinkHref>
                             </ServicesCard.Body>
@@ -110,7 +110,7 @@ const HomePage = () => {
                                 </ServicesCard.Icon>
                                 <ServicesCard.Title>Agriculture</ServicesCard.Title>
                                 <ServicesCard.Description>Elevate your agricultural solutions with AgriZone</ServicesCard.Description>
-                                <ServicesCard.LinkHref to="#">
+                                <ServicesCard.LinkHref to="/agri-zone">
                                     Learn more
                                 </ServicesCard.LinkHref>
                             </ServicesCard.Body>
@@ -125,7 +125,7 @@ const HomePage = () => {
                                 </ServicesCard.Icon>
                                 <ServicesCard.Title>Retail</ServicesCard.Title>
                                 <ServicesCard.Description>Attain retail success with strategic location planning using ShopSpot.</ServicesCard.Description>
-                                <ServicesCard.LinkHref to="#">
+                                <ServicesCard.LinkHref to="/shop-spot">
                                     Learn more
                                 </ServicesCard.LinkHref>
                             </ServicesCard.Body>
@@ -140,7 +140,7 @@ const HomePage = () => {
                                 </ServicesCard.Icon>
                                 <ServicesCard.Title>Real Estate</ServicesCard.Title>
                                 <ServicesCard.Description>Build real estate success on precision data with RealSight.</ServicesCard.Description>
-                                <ServicesCard.LinkHref to="#">
+                                <ServicesCard.LinkHref to="/real-sight">
                                     Learn more
                                 </ServicesCard.LinkHref>
                             </ServicesCard.Body>
@@ -155,7 +155,7 @@ const HomePage = () => {
                                 </ServicesCard.Icon>
                                 <ServicesCard.Title>Advertising</ServicesCard.Title>
                                 <ServicesCard.Description>Achieve geo -targeted advertising for maximum impact with AdReach.</ServicesCard.Description>
-                                <ServicesCard.LinkHref to="#">
+                                <ServicesCard.LinkHref to="/ad-reach">
                                     Learn more
                                 </ServicesCard.LinkHref>
                             </ServicesCard.Body>
@@ -170,7 +170,7 @@ const HomePage = () => {
                                 </ServicesCard.Icon>
                                 <ServicesCard.Title>Logistics</ServicesCard.Title>
                                 <ServicesCard.Description>Own precision navigation and route optimization with NavOptix</ServicesCard.Description>
-                                <ServicesCard.LinkHref to="#">
+                                <ServicesCard.LinkHref to="/nav-optix">
                                     Learn more
                                 </ServicesCard.LinkHref>
                             </ServicesCard.Body>
@@ -189,7 +189,7 @@ const HomePage = () => {
                                 </ServicesCard.Icon>
                                 <ServicesCard.Title>Tourism</ServicesCard.Title>
                                 <ServicesCard.Description>Unlock the potential of tourism with TourMap.</ServicesCard.Description>
-                                <ServicesCard.LinkHref to="#">
+                                <ServicesCard.LinkHref to="/tour-map">
                                     Learn more
                                 </ServicesCard.LinkHref>
                             </ServicesCard.Body>
@@ -204,7 +204,7 @@ const HomePage = () => {
                                 </ServicesCard.Icon>
                                 <ServicesCard.Title>Utilities</ServicesCard.Title>
                                 <ServicesCard.Description>Optimize utility services with precision using UtilityNet.</ServicesCard.Description>
-                                <ServicesCard.LinkHref to="#">
+                                <ServicesCard.LinkHref to="/utility-net">
                                     Learn more
                                 </ServicesCard.LinkHref>
                             </ServicesCard.Body>
@@ -219,7 +219,7 @@ const HomePage = () => {
                                 </ServicesCard.Icon>
                                 <ServicesCard.Title>Education</ServicesCard.Title>
                                 <ServicesCard.Description>Transform education planning with EduZone.</ServicesCard.Description>
-                                <ServicesCard.LinkHref to="#">
+                                <ServicesCard.LinkHref to="/edu-zone">
                                     Learn more
                                 </ServicesCard.LinkHref>
                             </ServicesCard.Body>
@@ -234,99 +234,13 @@ const HomePage = () => {
                                 </ServicesCard.Icon>
                                 <ServicesCard.Title>Government</ServicesCard.Title>
                                 <ServicesCard.Description>Streamline government services with CiviSync.</ServicesCard.Description>
-                                <ServicesCard.LinkHref to="#">
+                                <ServicesCard.LinkHref to="/civi-sync">
                                     Learn more
                                 </ServicesCard.LinkHref>
                             </ServicesCard.Body>
                         </ServicesCard.Card>
 
                     </ServicesCard>
-
-
-
-                    {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5  py-10">
-      
-                        <div className="rounded-lg flex flex-col gap-4 items-start mb-5 lg:mb-10">
-                            <div className="bg-blue-100 rounded-full p-3">
-                                <svg className="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            </div>
-                            <div className="flex flex-col gap-3 ">
-                                <h3 className="text-xl font-bold text-gray-800">Financial services</h3>
-                                <p className="text-gray-600 text-sm">Use location intelligence for financial security with SecureSite.</p>
-                            </div>
-                            <Link to="#" className="inline-block text-blue-500 hover:text-blue-700">Learn more →</Link>
-                        </div>
-                        <div className="rounded-lg flex flex-col gap-4 items-start mb-5 lg:mb-10">
-                            <div className="bg-blue-100 rounded-full p-3">
-                                <svg className="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            </div>
-                            <div className="flex flex-col gap-3 ">
-                                <h3 className="text-xl font-bold text-gray-800">Financial services</h3>
-                                <p className="text-gray-600 text-sm">Use location intelligence for financial security with SecureSite.</p>
-                            </div>
-                            <Link to="#" className="inline-block text-blue-500 hover:text-blue-700">Learn more →</Link>
-                        </div>
-                        <div className="rounded-lg flex flex-col gap-4 items-start mb-5 lg:mb-10">
-                            <div className="bg-blue-100 rounded-full p-3">
-                                <svg className="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            </div>
-                            <div className="flex flex-col gap-3 ">
-                                <h3 className="text-xl font-bold text-gray-800">Financial services</h3>
-                                <p className="text-gray-600 text-sm">Use location intelligence for financial security with SecureSite.</p>
-                            </div>
-                            <Link to="#" className="inline-block text-blue-500 hover:text-blue-700">Learn more →</Link>
-                        </div>
-                        <div className="rounded-lg flex flex-col gap-4 items-start mb-5 lg:mb-10">
-                            <div className="bg-blue-100 rounded-full p-3">
-                                <svg className="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            </div>
-                            <div className="flex flex-col gap-3 ">
-                                <h3 className="text-xl font-bold text-gray-800">Financial services</h3>
-                                <p className="text-gray-600 text-sm">Use location intelligence for financial security with SecureSite.</p>
-                            </div>
-                            <Link to="#" className="inline-block text-blue-500 hover:text-blue-700">Learn more →</Link>
-                        </div>
-                        <div className="rounded-lg flex flex-col gap-4 items-start mb-5 lg:mb-10">
-                            <div className="bg-blue-100 rounded-full p-3">
-                                <svg className="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            </div>
-                            <div className="flex flex-col gap-3 ">
-                                <h3 className="text-xl font-bold text-gray-800">Financial services</h3>
-                                <p className="text-gray-600 text-sm">Use location intelligence for financial security with SecureSite.</p>
-                            </div>
-                            <Link to="#" className="inline-block text-blue-500 hover:text-blue-700">Learn more →</Link>
-                        </div>
-                        <div className="rounded-lg flex flex-col gap-4 items-start mb-5 lg:mb-10">
-                            <div className="bg-blue-100 rounded-full p-3">
-                                <svg className="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            </div>
-                            <div className="flex flex-col gap-3 ">
-                                <h3 className="text-xl font-bold text-gray-800">Financial services</h3>
-                                <p className="text-gray-600 text-sm">Use location intelligence for financial security with SecureSite.</p>
-                            </div>
-                            <Link to="#" className="inline-block text-blue-500 hover:text-blue-700">Learn more →</Link>
-                        </div>
-                        <div className="rounded-lg flex flex-col gap-4 items-start mb-5 lg:mb-10">
-                            <div className="bg-blue-100 rounded-full p-3">
-                                <svg className="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            </div>
-                            <div className="flex flex-col gap-3 ">
-                                <h3 className="text-xl font-bold text-gray-800">Financial services</h3>
-                                <p className="text-gray-600 text-sm">Use location intelligence for financial security with SecureSite.</p>
-                            </div>
-                            <Link to="#" className="inline-block text-blue-500 hover:text-blue-700">Learn more →</Link>
-                        </div>
-                        <div className="rounded-lg flex flex-col gap-4 items-start mb-5 lg:mb-10">
-                            <div className="bg-blue-100 rounded-full p-3">
-                                <svg className="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            </div>
-                            <div className="flex flex-col gap-3 ">
-                                <h3 className="text-xl font-bold text-gray-800">Financial services</h3>
-                                <p className="text-gray-600 text-sm">Use location intelligence for financial security with SecureSite.</p>
-                            </div>
-                            <Link to="#" className="inline-block text-blue-500 hover:text-blue-700">Learn more →</Link>
-                        </div>
-                    </div> */}
                 </Container>
             </section>
 
