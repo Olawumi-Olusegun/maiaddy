@@ -41,7 +41,7 @@ const SidebarButton: FC<{ id: number; title: string }> = ({ id, title }) => {
         throw new Error("SidebarButton must be used within a SidebarProvider");
     }
 
-    const { openDropdown, toggleDropdown } = context;
+    const { toggleDropdown } = context;
 
     return (
         <button
@@ -54,13 +54,14 @@ const SidebarButton: FC<{ id: number; title: string }> = ({ id, title }) => {
 };
 
 // Dropdown content
-const DropdownContent: FC<{ id: number; children: ReactNode }> = ({ id, children }) => {
+const DropdownContent: FC<{ id: number; children: ReactNode }> = ({ children }) => {
+
     const context = useContext(SidebarContext);
     if (!context) {
         throw new Error("DropdownContent must be used within a SidebarProvider");
     }
 
-    const { openDropdown } = context;
+    // const { openDropdown } = context;
 
     return (
         <>
