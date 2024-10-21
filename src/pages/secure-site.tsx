@@ -3,11 +3,34 @@ import ActionCard from "../components/ui/ActionCard"
 import FeatureCard from "../components/ui/FeatureCard"
 import PageHero from "../components/ui/PageHero"
 import Pricing from "../components/ui/Pricing"
+import { DropdownContent, Sidebar, SidebarButton, SidebarLink, SidebarProvider, SidebarTitle } from "../components/ui/Sidebar"
+
 
 const SecureSite = () => {
     return (
         <>
-            <section className="w-full xl:px-12">
+            <section className="w-full grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-4 ">
+                <SidebarProvider>
+                    <Sidebar>
+                        <SidebarTitle to="#">Overview</SidebarTitle>
+                        <SidebarButton id={1} title="Features" />
+                        <DropdownContent id={1}>
+                            <SidebarLink to="#">Advanced Address Verification</SidebarLink>
+                            <SidebarLink to="#">Fraud Detection</SidebarLink>
+                            <SidebarLink to="#">Branch & ATM Optimization</SidebarLink>
+                        </DropdownContent>
+                        <SidebarButton id={2} title="Why Choose SecureSite?" />
+                        <DropdownContent id={2}>
+                            <SidebarLink to="#">Regulatory Compliance</SidebarLink>
+                            <SidebarLink to="#">Fraud Prevention</SidebarLink>
+                            <SidebarLink to="#">Strategic Planning</SidebarLink>
+                        </DropdownContent>
+
+                        <SidebarTitle to="#">Use Cases</SidebarTitle>
+                        <SidebarTitle to="#">Pricing</SidebarTitle>
+                        <SidebarTitle to="#">Documentation</SidebarTitle>
+                    </Sidebar>
+                </SidebarProvider>
                 <Container>
                     <PageHero>
                         <PageHero.Body>

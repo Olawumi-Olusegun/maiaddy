@@ -3,11 +3,39 @@ import ActionCard from "../components/ui/ActionCard"
 import FeatureCard from "../components/ui/FeatureCard"
 import PageHero from "../components/ui/PageHero"
 import Pricing from "../components/ui/Pricing"
+import { DropdownContent, Sidebar, SidebarButton, SidebarLink, SidebarProvider, SidebarTitle } from "../components/ui/Sidebar"
+
 
 const HealthLoc = () => {
     return (
         <>
-            <section className="w-full xl:px-12">
+            <section className="w-full grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-4 ">
+                <SidebarProvider>
+                    <Sidebar>
+                        <SidebarTitle to="#">Overview</SidebarTitle>
+                        <SidebarButton id={1} title="Features" />
+                        <DropdownContent id={1}>
+                            <SidebarLink to="#">Accurate Patient Address Verification</SidebarLink>
+                            <SidebarLink to="#">Optimized Emergency Response</SidebarLink>
+                            <SidebarLink to="#">Comprehensive Health Service Coverage Analysis</SidebarLink>
+                            <SidebarLink to="#">Tailored Solutions for Healthcare Providers</SidebarLink>
+                            <SidebarLink to="#">Streamlined Healthcare Operations</SidebarLink>
+                        </DropdownContent>
+
+                        <SidebarButton id={2} title="Why Choose HealthLoc?" />
+                        <DropdownContent id={2}>
+                            <SidebarLink to="#">Unmatched Accuracy</SidebarLink>
+                            <SidebarLink to="#">Designed for Healthcare</SidebarLink>
+                            <SidebarLink to="#">Seamless Integration</SidebarLink>
+                            <SidebarLink to="#">Real-Time Insights</SidebarLink>
+                            <SidebarLink to="#">Scalable and Customizable</SidebarLink>
+                        </DropdownContent>
+
+                        <SidebarTitle to="#" className="font-semibold">Use Cases</SidebarTitle>
+                        <SidebarTitle to="#" className="font-semibold">Pricing</SidebarTitle>
+                        <SidebarTitle to="#" className="font-semibold">Documentation</SidebarTitle>
+                    </Sidebar>
+                </SidebarProvider>
                 <Container>
                     <PageHero>
                         <PageHero.Body>

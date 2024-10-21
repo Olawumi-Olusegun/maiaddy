@@ -2,11 +2,39 @@ import Container from "../components/Container"
 import ActionCard from "../components/ui/ActionCard"
 import PageHero from "../components/ui/PageHero"
 import Pricing from "../components/ui/Pricing"
+import { DropdownContent, Sidebar, SidebarButton, SidebarLink, SidebarProvider, SidebarTitle } from "../components/ui/Sidebar"
+
 
 const InsurSight = () => {
     return (
         <>
-            <section className="w-full xl:px-12">
+            <section className="w-full grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-4 ">
+                <SidebarProvider>
+                    <Sidebar>
+                        <SidebarTitle to="#">Overview</SidebarTitle>
+                        <SidebarButton id={1} title="Features" />
+                        <DropdownContent id={1}>
+                            <SidebarLink to="#">Granular Location-Based Risk Profiling</SidebarLink>
+                            <SidebarLink to="#">Natural Disaster Risk Assessment</SidebarLink>
+                            <SidebarLink to="#">Crime Risk Analysis</SidebarLink>
+                            <SidebarLink to="#">Property-Specific Risk Assessment</SidebarLink>
+                            <SidebarLink to="#"> Health Risk Mapping</SidebarLink>
+                            <SidebarLink to="#">Traffic and Auto Insurance Risk</SidebarLink>
+                        </DropdownContent>
+
+                        <SidebarButton id={2} title="Why Choose InsurSight?" />
+                        <DropdownContent id={2}>
+                            <SidebarLink to="#">Precision and Accuracy</SidebarLink>
+                            <SidebarLink to="#">Tailored for the African Market</SidebarLink>
+                            <SidebarLink to="#">Seamless Integration</SidebarLink>
+                            <SidebarLink to="#">Scalable and Flexible</SidebarLink>
+                            <SidebarLink to="#">Comprehensive Risk Intelligence</SidebarLink>
+                        </DropdownContent>
+
+                        <SidebarTitle to="#" className="font-semibold">Pricing</SidebarTitle>
+                        <SidebarTitle to="#" className="font-semibold">Documentation</SidebarTitle>
+                    </Sidebar>
+                </SidebarProvider>
                 <Container>
 
                     <PageHero>
@@ -44,7 +72,7 @@ const InsurSight = () => {
                                         </div>
                                     </div>
                                     <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/risk-assessment.png" alt="risk-assessment" />
                                     </div>
                                 </div>
 
@@ -60,7 +88,7 @@ const InsurSight = () => {
                                         </div>
                                     </div>
                                     <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/crime-risk-analysis.png" alt="crime-risk-analysis" />
                                     </div>
                                 </div>
 
@@ -76,7 +104,7 @@ const InsurSight = () => {
                                         </div>
                                     </div>
                                     <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/property-risk-assessment.png" alt="property-risk-assessment" />
                                     </div>
                                 </div>
 
@@ -92,7 +120,7 @@ const InsurSight = () => {
                                         </div>
                                     </div>
                                     <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/health-risk-mapping.png" alt="health-risk-mapping" />
                                     </div>
                                 </div>
 
@@ -108,7 +136,7 @@ const InsurSight = () => {
                                         </div>
                                     </div>
                                     <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/traffic-auto-insurance-risk.png" alt="traffic-auto-insurance-risk" />
                                     </div>
                                 </div>
 
@@ -176,7 +204,7 @@ const InsurSight = () => {
                                     </div>
                                 </div>
                                 <div className="w-full col-span-12 md:col-span-4">
-                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/underwritten-excellence.png" alt="underwritten-excellence" />
                                 </div>
                             </div>
 
@@ -190,7 +218,7 @@ const InsurSight = () => {
                                     </div>
                                 </div>
                                 <div className="w-full col-span-12 md:col-span-4">
-                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/claims-optimization.png" alt="claims-optimization" />
                                 </div>
                             </div>
 
@@ -205,7 +233,7 @@ const InsurSight = () => {
                                     </div>
                                 </div>
                                 <div className="w-full col-span-12 md:col-span-4">
-                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/fraud-prevention.png" alt="fraud-prevention" />
                                 </div>
                             </div>
 
@@ -219,7 +247,7 @@ const InsurSight = () => {
                                     </div>
                                 </div>
                                 <div className="w-full col-span-12 md:col-span-4">
-                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/pricing-strategy.png" alt="pricing-strategy" />
                                 </div>
                             </div>
 

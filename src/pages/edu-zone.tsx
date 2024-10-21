@@ -2,11 +2,36 @@ import Container from "../components/Container"
 import ActionCard from "../components/ui/ActionCard"
 import PageHero from "../components/ui/PageHero"
 import Pricing from "../components/ui/Pricing"
+import { DropdownContent, Sidebar, SidebarButton, SidebarLink, SidebarProvider, SidebarTitle } from "../components/ui/Sidebar"
 
 const EduZone = () => {
     return (
         <>
-            <section className="w-full xl:px-12">
+            <section className="w-full grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-4 ">
+                <SidebarProvider>
+                    <Sidebar>
+                        <SidebarTitle to="#">Overview</SidebarTitle>
+                        <SidebarButton id={1} title="Features" />
+                        <DropdownContent id={1}>
+                            <SidebarLink to="#">Catchment Area Analysis</SidebarLink>
+                            <SidebarLink to="#">Resource Optimization</SidebarLink>
+                            <SidebarLink to="#">Transportation Planning</SidebarLink>
+                            <SidebarLink to="#">Demographic Insights</SidebarLink>
+                        </DropdownContent>
+
+                        <SidebarButton id={2} title="Why Choose EduZone?" />
+
+                        <SidebarButton id={3} title="Use Cases" />
+                        <DropdownContent id={3}>
+                            <SidebarLink to="#">School Placement and Catchment Area Analysis</SidebarLink>
+                            <SidebarLink to="#">Optimizing School Bus Routes</SidebarLink>
+                            <SidebarLink to="#">Resource Allocation for Educational Programs</SidebarLink>
+                        </DropdownContent>
+
+                        <SidebarTitle to="#" className="font-semibold">Pricing</SidebarTitle>
+                        <SidebarTitle to="#" className="font-semibold">Documentation</SidebarTitle>
+                    </Sidebar>
+                </SidebarProvider>
                 <Container>
                     <PageHero>
                         <PageHero.Body>
@@ -37,7 +62,7 @@ const EduZone = () => {
                                         <p className="text-gray-600 text-xl">Ensure that every journey starts on the right foot with NavOptix's real-time address verification. By instantly validating and geocoding customer addresses, NavOptix minimizes the risk of delivery errors and missed pick-ups, keeping your operations smooth and reliable.</p>
                                     </div>
                                     <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/catchment-area-analysis.png" alt="catchment-area-analysis" />
                                     </div>
                                 </div>
 
@@ -47,7 +72,7 @@ const EduZone = () => {
                                         <p className="text-gray-600 text-xl">Plan and distribute educational resources more effectively by understanding the geographic distribution of students, ensuring that every school has the necessary tools to succeed.</p>
                                     </div>
                                     <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/resource-optimization.png" alt="resource-optimization" />
                                     </div>
                                 </div>
 
@@ -57,7 +82,7 @@ const EduZone = () => {
                                         <p className="text-gray-600 text-xl">Optimize school bus routes and transportation schedules using postcode-specific data, reducing travel time for students and enhancing their safety.</p>
                                     </div>
                                     <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/transportation-planning.png" alt="transportation-planning" />
                                     </div>
                                 </div>
 
@@ -67,7 +92,7 @@ const EduZone = () => {
                                         <p className="text-gray-600 text-xl">Access detailed demographic data within specific postcode areas to tailor educational programs that meet the needs of diverse student populations.</p>
                                     </div>
                                     <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/demographic-insight.png" alt="demographic-insight" />
                                     </div>
                                 </div>
 
@@ -99,7 +124,7 @@ const EduZone = () => {
                                 </div>
 
                                 <div className="w-full col-span-12 md:col-span-4">
-                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/school-placement.png" alt="school-placement" />
                                 </div>
                             </div>
 
@@ -114,7 +139,7 @@ const EduZone = () => {
                                     </div>
                                 </div>
                                 <div className="w-full col-span-12 md:col-span-4">
-                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/optimize-school-bus-route.png" alt="optimize-school-bus-route" />
                                 </div>
                             </div>
 
@@ -129,7 +154,7 @@ const EduZone = () => {
                                     </div>
                                 </div>
                                 <div className="w-full col-span-12 md:col-span-4">
-                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/education-resource-allocation.png" alt="education-resource-allocation" />
                                 </div>
                             </div>
 

@@ -3,11 +3,34 @@ import ActionCard from "../components/ui/ActionCard"
 import FeatureCard from "../components/ui/FeatureCard"
 import PageHero from "../components/ui/PageHero"
 import Pricing from "../components/ui/Pricing"
+import { DropdownContent, Sidebar, SidebarButton, SidebarLink, SidebarProvider, SidebarTitle } from "../components/ui/Sidebar"
 
-const ShopStop = () => {
+
+const ShopSpot = () => {
     return (
         <>
-            <section className="w-full xl:px-12">
+            <section className="w-full grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-4 ">
+                <SidebarProvider>
+                    <Sidebar>
+                        <SidebarTitle to="#">Overview</SidebarTitle>
+                        <SidebarButton id={1} title="Features" />
+                        <DropdownContent id={1}>
+                            <SidebarLink to="#">Site Selection</SidebarLink>
+                            <SidebarLink to="#">Catchment Area Analysis</SidebarLink>
+                            <SidebarLink to="#"> Delivery Optimization</SidebarLink>
+                        </DropdownContent>
+                        <SidebarButton id={2} title="Why Choose ShopSpot?" />
+                        <DropdownContent id={2}>
+                            <SidebarLink to="#">Strategic Growth</SidebarLink>
+                            <SidebarLink to="#">Customer Insight</SidebarLink>
+                            <SidebarLink to="#">Operational Efficiency</SidebarLink>
+                        </DropdownContent>
+
+                        <SidebarTitle to="#">Use Cases</SidebarTitle>
+                        <SidebarTitle to="#">Pricing</SidebarTitle>
+                        <SidebarTitle to="#">Documentation</SidebarTitle>
+                    </Sidebar>
+                </SidebarProvider>
                 <Container>
                     <PageHero>
                         <PageHero.Body>
@@ -651,4 +674,4 @@ const ShopStop = () => {
     )
 }
 
-export default ShopStop
+export default ShopSpot

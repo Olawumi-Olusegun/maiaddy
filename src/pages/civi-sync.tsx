@@ -1,11 +1,42 @@
 import Container from "../components/Container"
 import ActionCard from "../components/ui/ActionCard"
 import PageHero from "../components/ui/PageHero"
+import { DropdownContent, Sidebar, SidebarButton, SidebarLink, SidebarProvider, SidebarTitle } from "../components/ui/Sidebar"
+
 
 const CiviSync = () => {
     return (
         <>
-            <section className="w-full xl:px-12">
+            <section className="w-full grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-4 ">
+                <SidebarProvider>
+                    <Sidebar>
+                        <SidebarTitle to="#">Overview</SidebarTitle>
+                        <SidebarButton id={1} title="Why Choose CiviSync?" />
+                        <DropdownContent id={1}>
+                            <SidebarLink to="#">Comprehensive Solutions for Every Sector</SidebarLink>
+                            <SidebarLink to="#">Seamless Integration</SidebarLink>
+                            <SidebarLink to="#">Scalable and Customizable</SidebarLink>
+                            <SidebarLink to="#">Robust Data Security</SidebarLink>
+                        </DropdownContent>
+
+                        <SidebarButton id={2} title="CiviSync API Offerings" />
+                        <DropdownContent id={2}>
+                            <SidebarLink to="#">Identity Management API</SidebarLink>
+                            <SidebarLink to="#">Address Verification API</SidebarLink>
+                            <SidebarLink to="#">Tax Collection and Revenue Management API</SidebarLink>
+                            <SidebarLink to="#">Public Service Integration API</SidebarLink>
+                        </DropdownContent>
+
+                        <SidebarButton id={3} title="How Civisync Works" />
+                        <DropdownContent id={3}>
+                            <SidebarLink to="#">Consultation and Customization</SidebarLink>
+                            <SidebarLink to="#">Seamless Deployment</SidebarLink>
+                        </DropdownContent>
+
+                        <SidebarTitle to="#" className="font-semibold">Pricing</SidebarTitle>
+                        <SidebarTitle to="#" className="font-semibold">Documentation</SidebarTitle>
+                    </Sidebar>
+                </SidebarProvider>
                 <Container>
                     <PageHero>
                         <PageHero.Body>
@@ -79,7 +110,7 @@ const CiviSync = () => {
                                 </div>
 
                                 <div className="w-full col-span-12 md:col-span-4">
-                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/identity-management-api.png" alt="identity-management-api" />
                                 </div>
                             </div>
 
@@ -92,7 +123,7 @@ const CiviSync = () => {
                                 </div>
 
                                 <div className="w-full col-span-12 md:col-span-4">
-                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/address-verification-api.png" alt="address-verification-api" />
                                 </div>
                             </div>
 
@@ -105,7 +136,7 @@ const CiviSync = () => {
                                 </div>
 
                                 <div className="w-full col-span-12 md:col-span-4">
-                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/tax-collection-api.png" alt="tax-collection-api" />
                                 </div>
                             </div>
 
@@ -118,7 +149,7 @@ const CiviSync = () => {
                                 </div>
 
                                 <div className="w-full col-span-12 md:col-span-4">
-                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/public-service-integration-api.png" alt="public-service-integration-api" />
                                 </div>
                             </div>
 

@@ -3,14 +3,44 @@ import ActionCard from "../components/ui/ActionCard"
 import FeatureCard from "../components/ui/FeatureCard"
 import PageHero from "../components/ui/PageHero"
 import Pricing from "../components/ui/Pricing"
+import { DropdownContent, Sidebar, SidebarButton, SidebarLink, SidebarProvider, SidebarTitle } from "../components/ui/Sidebar"
 
 
 const NavOptix = () => {
     return (
         <>
-            <section className="w-full xl:px-12">
-                <Container>
+            <section className="w-full grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-4 ">
+                <SidebarProvider>
+                    <Sidebar>
+                        <SidebarTitle to="#">Overview</SidebarTitle>
+                        <SidebarButton id={1} title="Features" />
+                        <DropdownContent id={1}>
+                            <SidebarLink to="#">Advanced Geocoding and Address Verification</SidebarLink>
+                            <SidebarLink to="#">Dynamic Route Optimization</SidebarLink>
+                            <SidebarLink to="#">Accurate ETA Calculations</SidebarLink>
+                            <SidebarLink to="#">Precise Pick-Up and Drop-Off Navigation</SidebarLink>
+                            <SidebarLink to="#">Scalable Integration</SidebarLink>
+                        </DropdownContent>
 
+                        <SidebarButton id={2} title="Why Choose NavOptix?" />
+                        <DropdownContent id={2}>
+                            <SidebarLink to="#">Unified Solution</SidebarLink>
+                            <SidebarLink to="#">Enhanced Accuracy</SidebarLink>
+                            <SidebarLink to="#">Increased Efficiency</SidebarLink>
+                            <SidebarLink to="#">Superior Customer Satisfaction</SidebarLink>
+                        </DropdownContent>
+
+                        <SidebarButton id={3} title="Use Cases" />
+                        <DropdownContent id={3}>
+                            <SidebarLink to="#">E-Commerce and Delivery Services</SidebarLink>
+                            <SidebarLink to="#">Ride-Hailing Services</SidebarLink>
+                        </DropdownContent>
+
+                        <SidebarTitle to="#" className="font-semibold">Pricing</SidebarTitle>
+                        <SidebarTitle to="#" className="font-semibold">Documentation</SidebarTitle>
+                    </Sidebar>
+                </SidebarProvider>
+                <Container>
                     <PageHero>
                         <PageHero.Body>
                             <PageHero.BreadCrumbTitle>NavOptix</PageHero.BreadCrumbTitle>

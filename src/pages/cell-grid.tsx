@@ -3,12 +3,33 @@ import ActionCard from "../components/ui/ActionCard"
 import FeatureCard from "../components/ui/FeatureCard"
 import PageHero from "../components/ui/PageHero"
 import Pricing from "../components/ui/Pricing"
-
+import { DropdownContent, Sidebar, SidebarButton, SidebarLink, SidebarProvider, SidebarTitle } from "../components/ui/Sidebar"
 
 const CellGrid = () => {
     return (
         <>
-            <section className="w-full xl:px-12">
+            <section className="w-full grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-4 ">
+                <SidebarProvider>
+                    <Sidebar>
+                        <SidebarTitle to="#">Overview</SidebarTitle>
+                        <SidebarButton id={1} title="Features" />
+                        <DropdownContent id={1}>
+                            <SidebarLink to="#">Network planning</SidebarLink>
+                            <SidebarLink to="#">Infrastructure optimization</SidebarLink>
+                            <SidebarLink to="#">Customer service enhancement</SidebarLink>
+                        </DropdownContent>
+                        <SidebarButton id={2} title="Why Choose CellGrid?" />
+                        <DropdownContent id={2}>
+                            <SidebarLink to="#">Enhanced Coverage</SidebarLink>
+                            <SidebarLink to="#">Cost Efficiency</SidebarLink>
+                            <SidebarLink to="#">Customer Satisfaction</SidebarLink>
+                        </DropdownContent>
+
+                        <SidebarTitle to="#">Use Cases</SidebarTitle>
+                        <SidebarTitle to="#">Pricing</SidebarTitle>
+                        <SidebarTitle to="#">Documentation</SidebarTitle>
+                    </Sidebar>
+                </SidebarProvider>
                 <Container>
                     <PageHero>
                         <PageHero.Body>
@@ -42,7 +63,7 @@ const CellGrid = () => {
                                         </FeatureCard.Description>
                                     </FeatureCard.GridArticle>
                                     <FeatureCard.Image>
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/network-planning.png" alt="network-planning" />
                                     </FeatureCard.Image>
                                 </FeatureCard.Grid>
                                 <FeatureCard.Divider />
@@ -59,7 +80,7 @@ const CellGrid = () => {
                                         </FeatureCard.Description>
                                     </FeatureCard.GridArticle>
                                     <FeatureCard.Image>
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/audience.png" alt="audience" />
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/infrastructural-optimization.png" alt="infrastructural-optimization" />
                                     </FeatureCard.Image>
                                 </FeatureCard.Grid>
                                 <FeatureCard.Divider />
@@ -76,7 +97,7 @@ const CellGrid = () => {
                                         </FeatureCard.Description>
                                     </FeatureCard.GridArticle>
                                     <FeatureCard.Image>
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/billboard.png" alt="billboard" />
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/customer-service-ehancement.png" alt="customer-service-ehancement" />
                                     </FeatureCard.Image>
                                 </FeatureCard.Grid>
                                 <FeatureCard.Divider />

@@ -3,12 +3,36 @@ import ActionCard from "../components/ui/ActionCard"
 import FeatureCard from "../components/ui/FeatureCard"
 import PageHero from "../components/ui/PageHero"
 import Pricing from "../components/ui/Pricing"
+import { DropdownContent, Sidebar, SidebarButton, SidebarLink, SidebarProvider, SidebarTitle } from "../components/ui/Sidebar"
 
 
 const TourMap = () => {
     return (
         <>
-            <section className="w-full xl:px-12">
+            <section className="w-full grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-4 ">
+                <SidebarProvider>
+                    <Sidebar>
+                        <SidebarTitle to="#">Overview</SidebarTitle>
+                        <SidebarButton id={1} title="Features" />
+                        <DropdownContent id={1}>
+                            <SidebarLink to="#">Personalized Itinerary Planning</SidebarLink>
+                            <SidebarLink to="#">Proximity-Based Recommendations</SidebarLink>
+                            <SidebarLink to="#">Real-Time Safety Updates</SidebarLink>
+                            <SidebarLink to="#">Localized Cultural Insights</SidebarLink>
+                        </DropdownContent>
+
+                        <SidebarButton id={2} title="Why Choose TourMap?" />
+                        <DropdownContent id={2}>
+                            <SidebarLink to="#">Custom Travel Itinerary Generation</SidebarLink>
+                            <SidebarLink to="#">Location-Based Marketing for Local Businesses</SidebarLink>
+                            <SidebarLink to="#">Tourist Safety and Emergency Services</SidebarLink>
+                        </DropdownContent>
+
+                        <SidebarTitle to="#" className="font-semibold">Use Cases</SidebarTitle>
+                        <SidebarTitle to="#" className="font-semibold">Pricing</SidebarTitle>
+                        <SidebarTitle to="#" className="font-semibold">Documentation</SidebarTitle>
+                    </Sidebar>
+                </SidebarProvider>
                 <Container>
                     <PageHero>
                         <PageHero.Body>

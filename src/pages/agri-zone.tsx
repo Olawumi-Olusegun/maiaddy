@@ -3,11 +3,37 @@ import ActionCard from "../components/ui/ActionCard"
 import FeatureCard from "../components/ui/FeatureCard"
 import PageHero from "../components/ui/PageHero"
 import Pricing from "../components/ui/Pricing"
+import { DropdownContent, Sidebar, SidebarButton, SidebarLink, SidebarProvider, SidebarTitle } from "../components/ui/Sidebar"
 
 const AgriZone = () => {
     return (
         <>
-            <section className="w-full xl:px-12">
+            <section className="w-full grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-4 ">
+                <SidebarProvider>
+                    <Sidebar>
+                        <SidebarTitle to="#">Overview</SidebarTitle>
+                        <SidebarButton id={1} title="Features" />
+                        <DropdownContent id={1}>
+                            <SidebarLink to="#">Localized Soil and Climate Data</SidebarLink>
+                            <SidebarLink to="#">Pest and Disease Monitoring</SidebarLink>
+                            <SidebarLink to="#">Yield Prediction Models</SidebarLink>
+                            <SidebarLink to="#">Supply Chain Optimization</SidebarLink>
+                        </DropdownContent>
+
+                        <SidebarButton id={2} title="Why Choose AgriZone?" />
+
+                        <SidebarButton id={3} title="Use Cases" />
+                        <DropdownContent id={3}>
+                            <SidebarLink to="#">Precision Farming for Smallholder Farmers</SidebarLink>
+                            <SidebarLink to="#">Pest and Disease Monitoring</SidebarLink>
+                            <SidebarLink to="#">Optimized Agricultural Supply Chain</SidebarLink>
+                        </DropdownContent>
+
+                        <SidebarTitle to="#" className="font-semibold">Pricing</SidebarTitle>
+                        <SidebarTitle to="#" className="font-semibold">Documentation</SidebarTitle>
+                    </Sidebar>
+                </SidebarProvider>
+
                 <Container>
 
                     <PageHero>
@@ -42,7 +68,7 @@ const AgriZone = () => {
                                     </FeatureCard.GridArticle>
 
                                     <FeatureCard.Image>
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/localized-soil.png" alt="localized-soil" />
                                     </FeatureCard.Image>
                                 </FeatureCard.Grid>
                                 <FeatureCard.Divider />
@@ -59,7 +85,7 @@ const AgriZone = () => {
                                         </FeatureCard.Description>
                                     </FeatureCard.GridArticle>
                                     <FeatureCard.Image>
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/audience.png" alt="audience" />
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/pest-disease-monitoring.png" alt="pest-disease-monitoring" />
                                     </FeatureCard.Image>
                                 </FeatureCard.Grid>
                                 <FeatureCard.Divider />
@@ -76,7 +102,7 @@ const AgriZone = () => {
                                         </FeatureCard.Description>
                                     </FeatureCard.GridArticle>
                                     <FeatureCard.Image>
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/billboard.png" alt="billboard" />
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/yeild-prediction-model.png" alt="yeild-prediction-model" />
                                     </FeatureCard.Image>
                                 </FeatureCard.Grid>
                                 <FeatureCard.Divider />
@@ -93,7 +119,7 @@ const AgriZone = () => {
                                         </FeatureCard.Description>
                                     </FeatureCard.GridArticle>
                                     <FeatureCard.Image>
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/billboard.png" alt="billboard" />
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/supply-chain.png" alt="supply-chain" />
                                     </FeatureCard.Image>
                                 </FeatureCard.Grid>
                                 <FeatureCard.Divider />
@@ -110,25 +136,25 @@ const AgriZone = () => {
                             </div>
                         </div>
 
+
                         <FeatureCard>
                             <FeatureCard.MainTitle className="text-lg font-semibold text-gray-800 mb-8">Use Cases</FeatureCard.MainTitle>
                             <FeatureCard.Body>
                                 <FeatureCard.Grid>
-                                    <FeatureCard.GridArticle>
+                                    <FeatureCard.GridArticle className="md:col-span-7">
                                         <FeatureCard.Title>Precision Farming for Smallholder Farmers</FeatureCard.Title>
-                                        <FeatureCard.Description className="">
-                                            <p className="w-full md:max-w-[700px] text-xl"> <span className="font-semibold">Use Cases:</span> By using AgriZone, the cooperative can provide farmers with localized soil and climate data specific to their fields (based on postcode areas). This allows farmers to make informed decisions about planting times, crop types, and irrigation schedules, leading to improved yields and reduced costs.</p>
+                                        <FeatureCard.Description>
+                                            <p className="w-full text-xl text-neutral-80"> <span className="font-semibold">Use Cases:</span> By using AgriZone, the cooperative can provide farmers with localized soil and climate data specific to their fields (based on postcode areas). This allows farmers to make informed decisions about planting times, crop types, and irrigation schedules, leading to improved yields and reduced costs.</p>
                                         </FeatureCard.Description>
                                     </FeatureCard.GridArticle>
-                                    <FeatureCard.Image>
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                    <FeatureCard.Image className="md:col-span-5">
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/precision-farming.png" alt="precision-farming" />
                                     </FeatureCard.Image>
                                 </FeatureCard.Grid>
                             </FeatureCard.Body>
                         </FeatureCard>
 
                         <FeatureCard>
-                            <FeatureCard.MainTitle className="text-lg font-semibold text-gray-800 mb-8">Use Cases</FeatureCard.MainTitle>
                             <FeatureCard.Body>
                                 <FeatureCard.Grid>
                                     <FeatureCard.GridArticle className="md:col-span-7">
@@ -139,7 +165,7 @@ const AgriZone = () => {
                                         </FeatureCard.Description>
                                     </FeatureCard.GridArticle>
                                     <FeatureCard.Image className="md:col-span-5">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/pest-disease-monitoring-2.png" alt="pest-disease-monitoring-2" />
                                     </FeatureCard.Image>
                                 </FeatureCard.Grid>
                             </FeatureCard.Body>
@@ -156,7 +182,7 @@ const AgriZone = () => {
                                         </FeatureCard.Description>
                                     </FeatureCard.GridArticle>
                                     <FeatureCard.Image className="md:col-span-5">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/agricultural-supply.png" alt="agricultural-supply" />
                                     </FeatureCard.Image>
                                 </FeatureCard.Grid>
                             </FeatureCard.Body>

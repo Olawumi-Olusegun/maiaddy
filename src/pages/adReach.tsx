@@ -4,10 +4,37 @@ import FeatureCard from "../components/ui/FeatureCard"
 import PageHero from "../components/ui/PageHero"
 import Pricing from "../components/ui/Pricing"
 
+import { DropdownContent, Sidebar, SidebarButton, SidebarLink, SidebarProvider, SidebarTitle } from "../components/ui/Sidebar"
+
 const AdReach = () => {
+
+
     return (
         <>
-            <section className="w-full xl:px-12">
+            <section className="w-full grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-4 ">
+                <SidebarProvider>
+                    <Sidebar>
+                        <SidebarTitle to="#">Overview</SidebarTitle>
+                        <SidebarButton id={1} title="Features" />
+                        <DropdownContent id={1}>
+                            <SidebarLink to="#">Geo-Targeted Advertising</SidebarLink>
+                            <SidebarLink to="#">Customer Segmentation</SidebarLink>
+                            <SidebarLink to="#">Out-of-Home Optimization</SidebarLink>
+                        </DropdownContent>
+
+                        <SidebarButton id={2} title="Why Choose AdReach?" />
+                        <DropdownContent id={2}>
+                            <SidebarLink to="#">Increased Relevance</SidebarLink>
+                            <SidebarLink to="#">Higher Engagement</SidebarLink>
+                            <SidebarLink to="#">Optimized Spend</SidebarLink>
+                        </DropdownContent>
+
+                        <SidebarTitle to="#">Use Cases</SidebarTitle>
+                        <SidebarTitle to="#">Pricing</SidebarTitle>
+                        <SidebarTitle to="#">Documentation</SidebarTitle>
+                    </Sidebar>
+                </SidebarProvider>
+
                 <Container>
                     <PageHero>
                         <PageHero.Body>
@@ -52,13 +79,13 @@ const AdReach = () => {
                             <FeatureCard.Body>
                                 <FeatureCard.Grid>
                                     <FeatureCard.GridArticle>
-                                        <FeatureCard.Title>Geo-Targeted Advertising</FeatureCard.Title>
+                                        <FeatureCard.Title>Customer Segmentation</FeatureCard.Title>
                                         <FeatureCard.Description>
-                                            Deliver ads that are tailored to specific locations, ensuring that your message reaches the most relevant audience.
+                                            Use location data to segment your audience more effectively, creating personalized marketing campaigns that drive engagement.
                                         </FeatureCard.Description>
                                     </FeatureCard.GridArticle>
                                     <FeatureCard.Image>
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/audience.png" alt="audience" />
                                     </FeatureCard.Image>
                                 </FeatureCard.Grid>
                                 <FeatureCard.Divider />

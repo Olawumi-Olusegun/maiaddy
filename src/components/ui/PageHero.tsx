@@ -22,7 +22,7 @@ const PageHero = ({ children }: PropsWithChildren) => {
 const Title = ({ children, className, ...props }: HtmlHTMLAttributes<HTMLHeadingElement>) => {
     return (
         <>
-            <h3 className={cn("text-4xl md:text-5xl lg:text-6xl font-bold text-primary-90 w-full lg:max-w-[729px]", className)} {...props}>{children}</h3>
+            <h3 className={cn("text-4xl md:text-5xl font-semibold text-primary-90 w-full lg:max-w-[783px]", className)} {...props}>{children}</h3>
         </>
     )
 }

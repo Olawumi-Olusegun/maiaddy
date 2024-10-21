@@ -3,11 +3,39 @@ import ActionCard from "../components/ui/ActionCard"
 import FeatureCard from "../components/ui/FeatureCard"
 import PageHero from "../components/ui/PageHero"
 import Pricing from "../components/ui/Pricing"
+import { DropdownContent, Sidebar, SidebarButton, SidebarLink, SidebarProvider, SidebarTitle } from "../components/ui/Sidebar"
 
 const RealSight = () => {
     return (
         <>
-            <section className="w-full xl:px-12">
+            <section className="w-full grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-4 ">
+                <SidebarProvider>
+                    <Sidebar>
+                        <SidebarTitle to="#">Overview</SidebarTitle>
+                        <SidebarButton id={1} title="Features" />
+                        <DropdownContent id={1}>
+                            <SidebarLink to="#">Accurate Property Valuation</SidebarLink>
+                            <SidebarLink to="#">Comprehensive Neighborhood Analysis</SidebarLink>
+                            <SidebarLink to="#">Predictive Market Trends</SidebarLink>
+                            <SidebarLink to="#">Property-Specific Risk Assessment</SidebarLink>
+                            <SidebarLink to="#">Property Development Insights</SidebarLink>
+                            <SidebarLink to="#">Transaction Support</SidebarLink>
+                        </DropdownContent>
+
+                        <SidebarButton id={2} title="Why Choose RealSight?" />
+                        <DropdownContent id={2}>
+                            <SidebarLink to="#">Location Precision</SidebarLink>
+                            <SidebarLink to="#">African Market Focus</SidebarLink>
+                            <SidebarLink to="#">Seamless Integration</SidebarLink>
+                            <SidebarLink to="#">Scalable Solutions</SidebarLink>
+                            <SidebarLink to="#">Comprehensive Market Intelligence</SidebarLink>
+                        </DropdownContent>
+
+                        <SidebarTitle to="#" className="font-semibold">How RealSight Works</SidebarTitle>
+                        <SidebarTitle to="#" className="font-semibold">Pricing</SidebarTitle>
+                        <SidebarTitle to="#" className="font-semibold">Documentation</SidebarTitle>
+                    </Sidebar>
+                </SidebarProvider>
                 <Container>
                     <PageHero>
                         <PageHero.Body>
@@ -44,7 +72,7 @@ const RealSight = () => {
                                         </FeatureCard.Description>
                                     </FeatureCard.GridArticle>
                                     <FeatureCard.Image>
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/verification.png" alt="verification-image" />
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/valuation.png" alt="valuation-image" />
                                     </FeatureCard.Image>
                                 </FeatureCard.Grid>
                                 <FeatureCard.Divider />
@@ -53,23 +81,7 @@ const RealSight = () => {
 
 
                         <div className="py-8">
-                            {/* <h2 className="text-gray-800 mb-4">Features</h2> */}
                             <div className="flex flex-col gap-8">
-                                {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
-                                    <div className="flex flex-col gap-4 rounded-lg w-full ">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-2">Accurate Property Valuation</h3>
-                                        <div className="w-full">
-                                            <ul className="list-disc space-y-4">
-                                                <li className="text-neutral-80 text-xl">Location-Based Valuation Models: Utilize advanced algorithms that consider postcode-specific factors, such as local amenities, historical sales data, and demographic trends, to deliver precise property valuations.</li>
-                                                <li className="text-neutral-80 text-xl">Real-Time Market Data: Access real-time data on property prices, market movements, and buyer demand, allowing you to make timely and informed investment decisions.</li>
-                                                <li className="text-neutral-80 text-xl">Custom Valuation Tools: Tailor valuation models to specific property types, from residential to commercial real estate, ensuring accuracy across different market segments.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
-                                    </div>
-                                </div> */}
 
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 border-b pb-5">
                                     <div className="flex flex-col gap-4 rounded-lg w-full ">
@@ -83,7 +95,7 @@ const RealSight = () => {
                                         </div>
                                     </div>
                                     <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/neighourhood-analysis.png" alt="neighourhood-analysis" />
                                     </div>
                                 </div>
 
@@ -99,7 +111,7 @@ const RealSight = () => {
                                         </div>
                                     </div>
                                     <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/market-trends.png" alt="market-trends" />
                                     </div>
                                 </div>
 
@@ -115,7 +127,7 @@ const RealSight = () => {
                                         </div>
                                     </div>
                                     <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/development-insight.png" alt="development-insight" />
                                     </div>
                                 </div>
 
@@ -131,7 +143,7 @@ const RealSight = () => {
                                         </div>
                                     </div>
                                     <div className="w-full lg:max-w-[371px]">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/transport-support.png" alt="transport-support" />
                                     </div>
                                 </div>
 
@@ -199,7 +211,7 @@ const RealSight = () => {
                                     </div>
                                 </div>
                                 <div className="w-full col-span-12 md:col-span-4">
-                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/valuation-accuracy.png" alt="valuation-accuracy" />
                                 </div>
                             </div>
 
@@ -213,23 +225,10 @@ const RealSight = () => {
                                     </div>
                                 </div>
                                 <div className="w-full col-span-12 md:col-span-4">
-                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/investment-strategy.png" alt="investment-strategy" />
                                 </div>
                             </div>
 
-                            <div className="grid grid-cols-12 gap-5 lg:gap-x-10 py-5">
-                                <div className="flex flex-col gap-4 rounded-lg w-full col-span-12 md:col-span-7">
-                                    <div className="w-full ">
-                                        <div className="flex items-start flex-wrap gap-3">
-                                            <h1 className="font-semibold w-full text-xl">Healthcare Service Planning</h1>
-                                            <p className="w-full md:max-w-[700px] text-xl"> Ensure that healthcare services are strategically located and accessible to all populations by analyzing service coverage and identifying gaps in care.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="w-full col-span-12 md:col-span-4">
-                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
-                                </div>
-                            </div>
 
                             <div className="grid grid-cols-12 gap-5 lg:gap-x-10 py-5">
                                 <div className="flex flex-col gap-4 rounded-lg w-full col-span-12 md:col-span-7">
@@ -241,7 +240,7 @@ const RealSight = () => {
                                     </div>
                                 </div>
                                 <div className="w-full col-span-12 md:col-span-4">
-                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/development-planning.png" alt="development-planning" />
                                 </div>
                             </div>
 
@@ -255,7 +254,7 @@ const RealSight = () => {
                                     </div>
                                 </div>
                                 <div className="w-full col-span-12 md:col-span-4">
-                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/ad-01.png" alt="Ad01" />
+                                    <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/market-analysis.png" alt="market-analysis" />
                                 </div>
                             </div>
 
