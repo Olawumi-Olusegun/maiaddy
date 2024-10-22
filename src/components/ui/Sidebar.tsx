@@ -78,7 +78,7 @@ const SidebarLink: FC<{ to: string; children: ReactNode }> = ({ to, children }) 
     return (
         <Link
             to={to}
-            className=" block px-4 py-2 text-[15px] text-neutral-60 hover:bg-white/5 rounded-md"
+            className=" block px-4 py-2 text-[15px] text-neutral-60 hover:text-primary-70 duration-300 hover:bg-white/5 rounded-md"
         >
             {children}
         </Link>
