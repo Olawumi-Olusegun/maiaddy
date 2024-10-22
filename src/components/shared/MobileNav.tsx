@@ -1,4 +1,4 @@
-import { ChevronDown, Menu, X } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import React, { MouseEvent, useEffect, useState } from "react";
 import { cn } from "../../utils/cn";
 import { Link, useLocation } from "react-router-dom";
