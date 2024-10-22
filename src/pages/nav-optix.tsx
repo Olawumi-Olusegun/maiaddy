@@ -9,7 +9,7 @@ import { DropdownContent, Sidebar, SidebarButton, SidebarLink, SidebarProvider, 
 const NavOptix = () => {
     return (
         <>
-            <section className="w-full grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-4 ">
+            <section className="w-full grid grid-cols-1 lg:grid-cols-[auto_1fr]  gap-6 ">
                 <SidebarProvider>
                     <Sidebar>
                         <SidebarTitle to="#">Overview</SidebarTitle>
