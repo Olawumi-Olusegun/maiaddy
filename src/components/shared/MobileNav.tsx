@@ -84,7 +84,7 @@ export default function MobileNav() {
                             >
                                 {link.label}
                                 {link.subLinks && (
-                                    <button >
+                                    <button>
                                         <ChevronDown
                                             className={cn(
                                                 "transition-all cursor-pointer",
@@ -95,7 +95,7 @@ export default function MobileNav() {
                                 )}
                             </Link>
                             {openedMenu === index && (
-                                <div className="pl-2">
+                                <div className="pl-2 ">
                                     {link.subLinks?.map((subLink, idx) => (
                                         <React.Fragment key={idx}>
                                             {subLink.header && (
