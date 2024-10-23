@@ -5,7 +5,7 @@ const DataScientist = () => {
         <section className="w-full">
             <Container>
                 <div className="flex flex-col gap-3 items-start my-10 w-full lg:max-w-[783px] ">
-                    <h2 className="text-3xl lg:text-5xl font-bold text-primary-90 ">Growth Lead (Marketing, Sales & Business Development)</h2>
+                    <h2 className="text-3xl lg:text-5xl font-bold text-primary-90 ">Data Scientist - Machine Learning (Java)</h2>
                     <div className="flex items-center gap-2 text-neutral-80">
                         <span>Full-time • </span>
                         <span> Nigeria</span>
@@ -23,77 +23,77 @@ const DataScientist = () => {
                     <div className="w-full">
                         <h2 className="mb-4 text-primary-90 text-2xl lg:text-4xl font-bold">Role Overview</h2>
                         <p className="text-neutral-70 text-xl mb-3">
-                            We are seeking a dynamic Growth Lead to spearhead our marketing, sales, and business development efforts. This is a unique role for a motivated self-starter who thrives in a fast-paced startup environment and has a proven track record in driving customer acquisition, closing partnerships, and scaling business initiatives. You will be responsible for developing and executing strategies to expand our market presence, generate sales, and foster long-term relationships with partners and clients.
+                            We are seeking a skilled and driven Data Scientist with deep experience in machine learning and a strong command of Java to develop and implement ML models tailored to our geospatial and location intelligence APIs. The ideal candidate will work closely with our software engineering and product teams to develop data-driven solutions that enhance the capabilities of our APIs. This role requires a blend of strong analytical skills, knowledge of machine learning, and proficiency in Java programming for production-level model deployment.
                         </p>
                     </div>
 
                     <div className="w-full">
                         <h2 className="mb-4 text-primary-90 text-2xl lg:text-4xl font-bold">Key Responsibilities</h2>
-                        <h4 className="mb-4 font-semibold text-primary-90">Marketing</h4>
                         <ul className="list-disc space-y-3 text-neutral-70 text-xl">
-                            <li>Develop and execute integrated marketing strategies to increase brand awareness, lead generation, and user acquisition for the Maiaddy platform</li>
-                            <li>Manage digital marketing campaigns (SEO, SEM, social media, email) to attract and engage potential users and partners.</li>
-                            <li>Create content and campaigns that resonate with our target audience, leveraging the power of storytelling to highlight Maiaddy's unique value proposition.</li>
-                            <li>Collaborate with product and development teams to ensure alignment between marketing efforts and product launches or updates.</li>
-                            <li>Track, analyze, and optimize marketing performance across multiple channels to maximize ROI.</li>
-                        </ul>
-                    </div>
-
-                    <div className="w-full">
-                        <h2 className="mb-4 text-primary-90 text-2xl lg:text-4xl font-bold">Sales</h2>
-                        <ul className="list-disc space-y-3 text-neutral-70 text-xl">
-                            <li>Identify potential business opportunities, including B2B partnerships with local businesses, advertisers, and enterprise clients who can benefit from Maiaddy's location intelligence platform.</li>
-                            <li>Manage the full sales cycle, from lead generation to closing deals, ensuring monthly sales targets are met or exceeded.</li>
-                            <li>Pitch Maiaddy's services to prospects and potential partners, clearly articulating the value and benefits of using the platform.</li>
-                            <li>Build and maintain a pipeline of clients, negotiating contracts and ensuring a high client retention rate.</li>
-                            <li>Stay up-to-date with market trends to adjust sales strategies accordingly.</li>
-                        </ul>
-                    </div>
-
-                    <div className="w-full">
-                        <h2 className="mb-4 text-primary-90 text-2xl lg:text-4xl font-bold">Business Development</h2>
-                        <ul className="list-disc space-y-3 text-neutral-70 text-xl">
-                            <li>Establish strategic partnerships with local businesses, event organizers, and other stakeholders to drive user growth and platform adoption.</li>
-                            <li>Explore and develop new business models and revenue streams based on Maiaddy's core product offering.</li>
-                            <li>Network with key influencers, industry leaders, and potential collaborators to strengthen Maiaddy's position in the market.</li>
-                            <li>Represent the company at events, trade shows, and networking opportunities to build visibility and expand the customer base.</li>
-                            <li>Collaborate with internal teams to identify and execute new business initiatives that align with the company's long-term vision.</li>
+                            <li>Design, develop, test and deploy machine learning models in Java to enhance Maiaddy's location intelligence offerings, with a focus on solving geospatial problems.</li>
+                            <li>Collaborate with software engineers to seamlessly integrate ML models into our existing Java-based APIs, ensuring efficient and scalable deployment.</li>
+                            <li>Analyze complex datasets from various domains (e.g., utilities, finance, logistics) to identify patterns, trends, and insights that can drive better decision-making.</li>
+                            <li>Feature engineering: Transform and preprocess geospatial, customer, and transactional data for optimal machine learning model performance.</li>
+                            <li>Perform end-to-end model development: from problem definition, data preprocessing, model training, validation, and optimization, to production deployment.</li>
+                            <li>Utilize Java-based machine learning libraries (e.g., Weka, Deeplearning4j, Smile) to build custom algorithms, including regression, classification, clustering, and time-series forecasting models.</li>
+                            <li>Evaluate model performance using cross-validation, accuracy metrics, and A/B testing, ensuring models are robust and meet business objectives.</li>
+                            <li>Optimize model performance through hyperparameter tuning, feature selection, and ensemble methods to ensure high-quality outputs</li>
+                            <li>Monitor models in production and continuously improve them based on real-time data and feedback, accounting for model drift or changing data distributions.</li>
+                            <li>Collaborate with stakeholders from various departments (engineering, product, and business) to understand project needs and deliver impactful solutions.</li>
+                            <li>Develop new techniques for analyzing large-scale geospatial datasets, uncovering patterns, and generating predictive insights.</li>
+                            <li>Create and maintain data pipelines for continuous learning and model improvement.</li>
+                            <li>Document processes, methodologies, and workflows to ensure the scalability and reproducibility of solutions</li>
+                            <li>Stay up-to-date with the latest advancements in machine learning and geospatial intelligence to incorporate cutting-edge techniques into Maiaddy Ltd's products.</li>
                         </ul>
                     </div>
 
                     <div className="w-full">
                         <h2 className="mb-4 text-primary-90 text-2xl lg:text-4xl font-bold">Key Qualifications</h2>
+                        <h4 className="mb-4 text-primary-90 text-2xl font-bold">Education</h4>
                         <ul className="list-disc space-y-3 text-neutral-70 text-xl">
-                            <li>Experience: 3-5+ years of experience in marketing, sales, and business development (preferably in tech startups or SaaS companies).</li>
-                            <li>Proven Track Record: Demonstrated success in driving revenue growth, developing marketing campaigns, and closing sales in a fast-paced environment.</li>
-                            <li>Sales Skills: Ability to create strong sales pitches, handle objections, and close deals with a consultative approach.</li>
-                            <li>Marketing Knowledge: Solid understanding of digital marketing, SEO/SEM, social media, and content marketing strategies.</li>
-                            <li>Business Development: Experience identifying and nurturing partnerships that drive growth, with the ability to navigate complex business landscapes.</li>
-                            <li>Communication: Excellent verbal and written communication skills, with the ability to present effectively to diverse audiences.</li>
-                            <li>Analytical Mindset: Strong analytical skills to measure campaign success, forecast </li>
-                            <li>Tech Savvy: Comfortable with using CRM tools, marketing automation platforms, and sales tracking software.</li>
-                            <li>Entrepreneurial Spirit: A self-starter who thrives in an autonomous role with the drive to make things happen in a startup environment.</li>
+                            <li> Bachelor's or Master's degree in Computer Science, Data Science, Statistics, Engineering, or related fields.</li>
                         </ul>
                     </div>
 
                     <div className="w-full">
-                        <h2 className="mb-4 text-primary-90 text-2xl lg:text-4xl font-bold">Bonus Skills</h2>
+                        <h4 className="mb-4 text-primary-90 text-2xl font-bold">Technical Expertise</h4>
                         <ul className="list-disc space-y-3 text-neutral-70 text-xl">
-                            <li>Experience in the location intelligence or geo-spatial technology sector.</li>
-                            <li>Familiarity with mobile app marketing, growth hacking, or data-driven marketing strategies.</li>
-                            <li>Experience working in B2B SaaS or marketplace platforms.</li>
-                            <li>Knowledge of local markets and consumer behavior patterns.</li>
+                            <li>Strong proficiency in Java programming, with experience in developing machine learning models directly in Java (not just interfacing with Python or other languages).</li>
+                            <li>Solid knowledge of machine learning algorithms (supervised and unsupervised), such as regression, decision trees, neural networks, clustering, and time-series analysis.</li>
+                            <li>Experience with Java-based ML libraries such as Weka, Deeplearning4j, Smile, or equivalent.</li>
+                            <li>Strong grasp of data structures and algorithms for efficient model implementation and optimization.</li>
+                            <li>Proficiency in data preprocessing and feature engineering, especially working with geospatial data, financial data, or logistics datasets.</li>
+                            <li>Knowledge of SQL and experience working with large datasets from relational databases.</li>
+                            <li>Experience: At least 3+ years of experience working as a Data Scientist or ML Engineer, ideally developing and deploying models in Java-based applications.</li>
+                            <li>Model Deployment: Experience deploying machine learning models into production environments and integrating them with APIs.</li>
+                            <li>Strong understanding of data evaluation techniques: cross-validation, accuracy metrics, precision/recall, F1 scores, AUC-ROC, RMSE, etc.</li>
+                            <li>Problem-Solving Skills: Ability to define problems clearly, design experiments, and develop solutions in collaboration with cross-functional teams.</li>
                         </ul>
                     </div>
+
+                    <div className="w-full">
+                        <h2 className="mb-4 text-primary-90 text-2xl lg:text-4xl font-bold">Preferred Qualifications</h2>
+                        <ul className="list-disc space-y-3 text-neutral-70 text-xl">
+                            <li>Experience working with geospatial data, location intelligence, or GIS systems.</li>
+                            <li>Familiarity with developing machine learning models for fraud detection, route optimization, or infrastructure planning.</li>
+                            <li>Experience using cloud platforms like AWS, Google Cloud, or Alibaba Cloud for ML model deployment and management.</li>
+                            <li>Knowledge of distributed computing frameworks (e.g., Apache Spark) for processing large-scale datasets.</li>
+                            <li>Experience with continuous integration and continuous deployment (CI/CD) pipelines.</li>
+                            <li>Strong communication skills: Ability to explain complex technical concepts to non-technical stakeholders.</li>
+                            <li>Familiarity with agile development practices.</li>
+                        </ul>
+                    </div>
+
+
 
                     <div className="w-full">
                         <h2 className="mb-4 text-primary-90 text-2xl lg:text-4xl font-bold">Why Join Maiaddy?</h2>
                         <ul className="list-disc space-y-3 text-neutral-70 text-xl">
-                            <li>Be part of a fast-growing startup where your contributions will directly impact the company's success.</li>
-                            <li>Work in a collaborative and innovative environment where new ideas are encouraged.</li>
-                            <li>Flexible work setup.</li>
-                            <li>Opportunities for growth and advancement as the company scales.</li>
-                            <li>Competitive salary and performance-based bonuses..</li>
+                            <li>Competitive salary and benefits in a fast-growing start-up</li>
+                            <li>Opportunity to work on cutting-edge location intelligence solutions with a direct impact on the business</li>
+                            <li>Flexible working arrangements.</li>
+                            <li>Collaborative and inclusive company culture</li>
+                            <li>Opportunities for professional development: Regular learning sessions, conferences, and courses.</li>
                         </ul>
                     </div>
 
@@ -102,7 +102,9 @@ const DataScientist = () => {
             </Container>
             <div className="w-full lg:w-[720px] mx-auto flex flex-col gap-8 my-10 p-5 bg-white rounded-md ">
                 <h2 className="text-primary-90 text-2xl lg:text-4xl font-bold">How to Apply?</h2>
-                <p className="text-neutral-70 text-xl">Please send your resume, cover letter, and a brief description of your most successful marketing or sales campaign to <a className="underline" href="mailto:contact@maiaddy.com">contact@maiaddy.com</a> . In your cover letter, tell us why you're excited about joining Maiaddy and how your experience will contribute to our growth journey.</p>
+                <p className="text-neutral-70 text-xl">Interested candidates should submit their resume and a cover letter explaining their experience with machine learning in Java, along with examples of projects or applications they have worked on.</p>
+                <p className="text-neutral-70 text-xl">Send your application to [contact@maiaddy.com] with the subject line “Data Scientist - ML (Java) Application”.</p>
+                <p className="text-neutral-70 text-xl">Join Maiaddy and be part of a team that's shaping the future of location intelligence through innovative data-driven solutions!</p>
             </div>
         </section>
     )

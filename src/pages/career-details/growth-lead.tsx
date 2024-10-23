@@ -93,7 +93,7 @@ const GrowthLead = () => {
                             <li>Work in a collaborative and innovative environment where new ideas are encouraged.</li>
                             <li>Flexible work setup.</li>
                             <li>Opportunities for growth and advancement as the company scales.</li>
-                            <li>Competitive salary and performance-based bonuses..</li>
+                            <li>Competitive salary and performance-based bonuses.</li>
                         </ul>
                     </div>
 

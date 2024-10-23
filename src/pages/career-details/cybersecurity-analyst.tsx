@@ -95,7 +95,7 @@ const CyberSecurityAnalyst = () => {
                     </div>
 
                     <div className="w-full">
-                        <h4 className="mb-4 text-primary-90 text-2xl font-bold">Technical Skills</h4>
+                        <h4 className="mb-4 text-primary-90 text-3xl font-bold">Technical Skills</h4>
                         <ul className="list-disc space-y-3 text-neutral-70 text-xl">
                             <li>Experience with SIEM tools, such as Splunk, IBM QRadar, or similar platforms.</li>
                             <li>Familiarity with cloud security (e.g., AWS, Azure) and securing cloud-native applications.</li>
