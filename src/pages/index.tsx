@@ -182,11 +182,11 @@ const HomePage = () => {
                             <ServicesCard.Body>
                                 <ServicesCard.Icon>
                                     <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9.75 8.86719H14.25" stroke="#336699" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M21.525 14.7087L17.4281 5.39934C17.0051 4.98083 16.4341 4.74609 15.8391 4.74609C15.244 4.74609 14.673 4.98083 14.25 5.39934V15.9931" stroke="#336699" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M9.75156 15.9931V5.39934C9.32856 4.98083 8.75754 4.74609 8.1625 4.74609C7.56746 4.74609 6.99644 4.98083 6.57344 5.39934L2.47656 14.7087" stroke="#336699" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M6 19.7422C8.07107 19.7422 9.75 18.0633 9.75 15.9922C9.75 13.9211 8.07107 12.2422 6 12.2422C3.92893 12.2422 2.25 13.9211 2.25 15.9922C2.25 18.0633 3.92893 19.7422 6 19.7422Z" stroke="#336699" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M18 19.7422C20.0711 19.7422 21.75 18.0633 21.75 15.9922C21.75 13.9211 20.0711 12.2422 18 12.2422C15.9289 12.2422 14.25 13.9211 14.25 15.9922C14.25 18.0633 15.9289 19.7422 18 19.7422Z" stroke="#336699" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.75 8.86719H14.25" stroke="#336699" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                        <path d="M21.525 14.7087L17.4281 5.39934C17.0051 4.98083 16.4341 4.74609 15.8391 4.74609C15.244 4.74609 14.673 4.98083 14.25 5.39934V15.9931" stroke="#336699" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                        <path d="M9.75156 15.9931V5.39934C9.32856 4.98083 8.75754 4.74609 8.1625 4.74609C7.56746 4.74609 6.99644 4.98083 6.57344 5.39934L2.47656 14.7087" stroke="#336699" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                        <path d="M6 19.7422C8.07107 19.7422 9.75 18.0633 9.75 15.9922C9.75 13.9211 8.07107 12.2422 6 12.2422C3.92893 12.2422 2.25 13.9211 2.25 15.9922C2.25 18.0633 3.92893 19.7422 6 19.7422Z" stroke="#336699" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                        <path d="M18 19.7422C20.0711 19.7422 21.75 18.0633 21.75 15.9922C21.75 13.9211 20.0711 12.2422 18 12.2422C15.9289 12.2422 14.25 13.9211 14.25 15.9922C14.25 18.0633 15.9289 19.7422 18 19.7422Z" stroke="#336699" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
                                 </ServicesCard.Icon>
                                 <ServicesCard.Title>Tourism</ServicesCard.Title>
