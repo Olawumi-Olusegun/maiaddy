@@ -81,7 +81,7 @@ const SecureSite = () => {
                                         </FeatureCard.Description>
                                     </FeatureCard.GridArticle>
                                     <FeatureCard.Image>
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/atm-machine.png" alt="atm-machine" />
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/fraud-detection.png" alt="fraud-detection" />
                                     </FeatureCard.Image>
                                 </FeatureCard.Grid>
                                 <FeatureCard.Divider />
