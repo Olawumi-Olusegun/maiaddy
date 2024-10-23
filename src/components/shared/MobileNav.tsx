@@ -99,14 +99,12 @@ export default function MobileNav() {
                                     >
                                         {link.label}
                                         {link.subLinks && (
-                                            <button>
-                                                <ChevronDown
-                                                    className={cn(
-                                                        "transition-all cursor-pointer duration-300",
-                                                        openedMenu === index ? "rotate-180" : ""
-                                                    )}
-                                                />
-                                            </button>
+                                            <ChevronDown
+                                                className={cn(
+                                                    "transition-all cursor-pointer duration-300",
+                                                    openedMenu === index ? "rotate-180" : ""
+                                                )}
+                                            />
                                         )}
                                     </button>
                                 )
