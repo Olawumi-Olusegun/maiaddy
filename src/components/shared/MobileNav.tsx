@@ -16,11 +16,12 @@ export default function MobileNav() {
 
     useEffect(() => {
         setMenuOpen(false);
+        setOpenedMenu(null)
     }, [pathname]);
 
     return (
         <>
-            <div className="w-full flex items-center justify-between">
+            <div className="w-full flex items-center px-3 justify-between">
 
                 <Link to={"/"} onClick={() => setMenuOpen(false)} className="flex items-center lg:hidden">
                     <svg width="103" height="62" viewBox="0 0 103 62" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,7 +62,7 @@ export default function MobileNav() {
                     menuOpen ? "translate-x-0" : "-translate-x-full"
                 )}
             >
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between ">
                     <Link to={"/"} onClick={() => setMenuOpen(false)} className="flex items-center">
                         <svg width="103" height="62" viewBox="0 0 103 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2.53031 36.8377C1.72726 36.8377 1.25487 36.3464 1.25487 35.5056V24.6786C1.25487 23.5259 1.93511 22.8363 3.09717 22.8363C4.08917 22.8363 4.63714 23.252 5.05284 24.3101L8.4351 32.6902H8.51069L11.8835 24.3101C12.2992 23.2614 12.8566 22.8363 13.8581 22.8363C15.0107 22.8363 15.6909 23.5165 15.6909 24.6786V35.5056C15.6909 36.3464 15.2185 36.8377 14.4155 36.8377C13.6124 36.8377 13.1495 36.3464 13.1495 35.5056V27.4562H13.0739L9.70109 35.704C9.45545 36.3086 9.07755 36.5732 8.48234 36.5732C7.87769 36.5732 7.48089 36.2992 7.2447 35.7134L3.87188 27.4562H3.7963V35.5056C3.7963 36.3464 3.33336 36.8377 2.53031 36.8377ZM18.9787 36.8377C18.0906 36.8377 17.5332 36.3181 17.5332 35.4961C17.5332 35.2599 17.5994 34.9387 17.7222 34.5892L21.4446 24.4518C21.8414 23.3464 22.5122 22.8363 23.5892 22.8363C24.704 22.8363 25.3654 23.3275 25.7716 24.4424L29.5129 34.5892C29.6452 34.9576 29.6924 35.2127 29.6924 35.4961C29.6924 36.2803 29.0972 36.8377 28.2658 36.8377C27.4627 36.8377 27.0376 36.4692 26.7825 35.5812L26.0645 33.4271H21.1422L20.4242 35.5528C20.1597 36.4598 19.7345 36.8377 18.9787 36.8377ZM21.7658 31.2163H25.4031L23.5986 25.6328H23.5325L21.7658 31.2163ZM32.9708 36.8377C32.0732 36.8377 31.5442 36.2897 31.5442 35.3544V24.329C31.5442 23.3842 32.0732 22.8363 32.9708 22.8363C33.8683 22.8363 34.3974 23.3842 34.3974 24.329V35.3544C34.3974 36.2897 33.8683 36.8377 32.9708 36.8377Z" fill="#336699" />
@@ -70,7 +71,7 @@ export default function MobileNav() {
                         </svg>
                     </Link>
                 </div>
-                <nav className="flex flex-col gap-4 pt-6 overflow-y-auto">
+                <nav className="flex flex-col gap-4 pt-1.5 pr-2 overflow-y-scroll maiaddy-custom-scrollbar">
                     {links.map((link, index) => (
                         <div key={link.label + index}>
                             <Link
@@ -87,7 +88,7 @@ export default function MobileNav() {
                                     <button>
                                         <ChevronDown
                                             className={cn(
-                                                "transition-all cursor-pointer",
+                                                "transition-all cursor-pointer duration-300",
                                                 openedMenu === index ? "rotate-180" : ""
                                             )}
                                         />
@@ -95,7 +96,7 @@ export default function MobileNav() {
                                 )}
                             </Link>
                             {openedMenu === index && (
-                                <div className="pl-2 ">
+                                <div className="pl-2 mt-1.5 ">
                                     {link.subLinks?.map((subLink, idx) => (
                                         <React.Fragment key={idx}>
                                             {subLink.header && (

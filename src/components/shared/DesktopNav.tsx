@@ -50,7 +50,7 @@ const DesktopNav = () => {
                         <Link to={"/about-us"}>About Us</Link>
                     </li>
                     <li className="text-neutral-700 text-base font-medium">
-                        <Link to={"/solutions"}>Solutions</Link>
+                        <Link to={"#"}>Solutions</Link>
                     </li>
                     <li className="text-neutral-700 text-base font-medium">
                         <Link to={"/careers"}>Careers</Link>

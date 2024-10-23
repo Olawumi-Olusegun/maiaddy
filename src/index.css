@@ -8,3 +8,18 @@
     @apply min-h-dvh bg-appBg scroll-smooth;
   }
 }
+
+/* custom scroll-bar */
+.maiaddy-custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.maiaddy-custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #133455;
+  border-radius: 9999px;
+  padding-left: 5px;
+}
+
+.maiaddy-custom-scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
