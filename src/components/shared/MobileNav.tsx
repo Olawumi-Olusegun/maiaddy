@@ -15,6 +15,18 @@ export default function MobileNav() {
     }
 
     useEffect(() => {
+        const handleWidthAdjust = () => {
+            if (window.innerWidth >= 20) {
+                setMenuOpen(false);
+                setOpenedMenu(null)
+            }
+        }
+        window.addEventListener("resize", handleWidthAdjust);
+
+        return () => window.removeEventListener("resize", handleWidthAdjust)
+    }, [])
+
+    useEffect(() => {
         setMenuOpen(false);
         setOpenedMenu(null)
     }, [pathname]);
