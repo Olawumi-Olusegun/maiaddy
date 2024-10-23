@@ -37,7 +37,7 @@ const ShopSpot = () => {
                             <PageHero.BreadCrumbTitle>ShopSpot</PageHero.BreadCrumbTitle>
                             <PageHero.Title>Strategic Location Planning for Retail Success</PageHero.Title>
                             <PageHero.Description className="">
-                                In retail, location is everything. ShopSpot is the definitive API service designed to help retail chains select the best store locations, optimize delivery logistics, and analyze customer catchment areas. Powered by the T2AL-Geo postcode system, ShopSpot provides the precise data you need to make informed decisions that drive retail success.
+                                In retail, location is everything. ShopSpot is the definitive API service designed to help retail chains select the best store locations, optimize delivery logistics, and analyze customer catchment areas. Powered by the Loccode postcode system, ShopSpot provides the precise data you need to make informed decisions that drive retail success.
                             </PageHero.Description>
                             <PageHero.ActionButtons>
                                 <PageHero.ActionLink to="/">

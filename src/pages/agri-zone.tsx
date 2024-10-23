@@ -41,7 +41,7 @@ const AgriZone = () => {
                             <PageHero.BreadCrumbTitle>AgriZone</PageHero.BreadCrumbTitle>
                             <PageHero.Title> Empower Precision Agriculture with AgriZone</PageHero.Title>
                             <PageHero.Description className="">
-                                Agriculture is the backbone of any economy, and in a world facing climate change and resource constraints, precision is key to sustainable growth. AgriZone offers a comprehensive suite of tools designed to empower farmers, agribusinesses, and government agencies with precise, location-based agricultural data. By integrating the T2AL-Geo postcode system, AgriZone provides the granularity needed to make informed decisions that optimize yields, reduce waste, and enhance overall productivity.
+                                Agriculture is the backbone of any economy, and in a world facing climate change and resource constraints, precision is key to sustainable growth. AgriZone offers a comprehensive suite of tools designed to empower farmers, agribusinesses, and government agencies with precise, location-based agricultural data. By integrating the Loccode postcode system, AgriZone provides the granularity needed to make informed decisions that optimize yields, reduce waste, and enhance overall productivity.
                             </PageHero.Description>
                             <PageHero.ActionButtons>
                                 <PageHero.ActionLink to="/">
@@ -131,7 +131,7 @@ const AgriZone = () => {
                             <h2 className="text-gray-800 mb-8 font-bold">WHY CHOOOSE AGRIZONE?</h2>
                             <div className="flex flex-col gap-8">
                                 <div className="flex items-start flex-wrap lg:gap-10">
-                                    <p className="w-full md:max-w-[700px] text-xl">AgriZone is built for the modern agricultural landscape. It combines the precision of the T2AL-Geo postcode system with advanced data analytics, providing users with actionable insights tailored to their specific needs. Whether you’re a farmer seeking to improve crop yields or a government agency focused on food security, AgriZone offers the tools to enhance productivity, sustainability, and profitability.</p>
+                                    <p className="w-full md:max-w-[700px] text-xl">AgriZone is built for the modern agricultural landscape. It combines the precision of the Loccode postcode system with advanced data analytics, providing users with actionable insights tailored to their specific needs. Whether you’re a farmer seeking to improve crop yields or a government agency focused on food security, AgriZone offers the tools to enhance productivity, sustainability, and profitability.</p>
                                 </div>
                             </div>
                         </div>

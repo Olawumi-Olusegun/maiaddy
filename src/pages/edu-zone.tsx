@@ -38,7 +38,7 @@ const EduZone = () => {
                             <PageHero.BreadCrumbTitle>EduZone</PageHero.BreadCrumbTitle>
                             <PageHero.Title> Transform Education Planning with EduZone</PageHero.Title>
                             <PageHero.Description className="">
-                                Education is the cornerstone of a thriving society, and ensuring that every child has access to quality education requires careful planning and resource allocation. EduZone is designed to support educational institutions, government agencies, and educational technology providers with precise, postcode-based data to make informed decisions. By integrating the T2AL-Geo postcode system, EduZone offers unparalleled insights into student distribution, school catchment areas, and resource needs, enabling a more efficient and equitable education system.
+                                Education is the cornerstone of a thriving society, and ensuring that every child has access to quality education requires careful planning and resource allocation. EduZone is designed to support educational institutions, government agencies, and educational technology providers with precise, postcode-based data to make informed decisions. By integrating the Loccode postcode system, EduZone offers unparalleled insights into student distribution, school catchment areas, and resource needs, enabling a more efficient and equitable education system.
                             </PageHero.Description>
                             <PageHero.ActionButtons>
                                 <PageHero.ActionLink to="/">
@@ -103,7 +103,7 @@ const EduZone = () => {
                             <h2 className="text-gray-800 mb-8 font-bold">WHY CHOOOSE EDUZONE?</h2>
                             <div className="flex flex-col gap-8">
                                 <div className="flex items-start flex-wrap lg:gap-10">
-                                    <p className="w-full md:max-w-[979px] text-xl">EduZone is the ultimate tool for modernizing the educational planning process. By integrating advanced geolocation data with the T2AL-Geo postcode system, it provides a comprehensive view of the educational landscape, enabling smarter decisions that benefit students, parents, and educators alike. Whether you’re managing a school district or developing educational technology, EduZone gives you the insights you need to drive positive change</p>
+                                    <p className="w-full md:max-w-[979px] text-xl">EduZone is the ultimate tool for modernizing the educational planning process. By integrating advanced geolocation data with the Loccode postcode system, it provides a comprehensive view of the educational landscape, enabling smarter decisions that benefit students, parents, and educators alike. Whether you’re managing a school district or developing educational technology, EduZone gives you the insights you need to drive positive change</p>
                                 </div>
                             </div>
                         </div>

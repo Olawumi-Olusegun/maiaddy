@@ -42,7 +42,7 @@ const HealthLoc = () => {
                             <PageHero.BreadCrumbTitle>HealthLoc</PageHero.BreadCrumbTitle>
                             <PageHero.Title> Revolutionizing Healthcare with Precision Location Intelligence</PageHero.Title>
                             <PageHero.Description className="">
-                                Welcome to HealthLoc, the cutting-edge solution designed to bring unprecedented accuracy and efficiency to healthcare delivery. In a field where every second counts, precise location data can make the difference between life and death. HealthLoc leverages the innovative T2AL-Geo postcode system to offer healthcare providers, emergency services, and care facilities unparalleled tools for optimizing patient care, planning health service coverage, and responding to emergencies. With HealthLoc, you can ensure that every patient receives the right care, at the right place, at the right time.
+                                Welcome to HealthLoc, the cutting-edge solution designed to bring unprecedented accuracy and efficiency to healthcare delivery. In a field where every second counts, precise location data can make the difference between life and death. HealthLoc leverages the innovative Loccode postcode system to offer healthcare providers, emergency services, and care facilities unparalleled tools for optimizing patient care, planning health service coverage, and responding to emergencies. With HealthLoc, you can ensure that every patient receives the right care, at the right place, at the right time.
                             </PageHero.Description>
                             <PageHero.ActionButtons>
                                 <PageHero.ActionLink to="/">

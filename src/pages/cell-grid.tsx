@@ -36,7 +36,7 @@ const CellGrid = () => {
                             <PageHero.BreadCrumbTitle>CellGrid</PageHero.BreadCrumbTitle>
                             <PageHero.Title>Precision Planning for Telecommunications Networks</PageHero.Title>
                             <PageHero.Description className="">
-                                In telecommunications, the strength of your network is everything. CellGrid is the premier API service that provides telecom companies with the tools they need to plan, deploy, and optimise their network infrastructure. Powered by the T2AL-Geo postcode system,CellGrid ensures that your network reaches every customer with precision and reliability.
+                                In telecommunications, the strength of your network is everything. CellGrid is the premier API service that provides telecom companies with the tools they need to plan, deploy, and optimise their network infrastructure. Powered by the Loccode postcode system,CellGrid ensures that your network reaches every customer with precision and reliability.
                             </PageHero.Description>
                             <PageHero.ActionButtons>
                                 <PageHero.ActionLink to="/">

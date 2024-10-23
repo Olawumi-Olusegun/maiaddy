@@ -41,7 +41,7 @@ const AdReach = () => {
                             <PageHero.BreadCrumbTitle>AdReach</PageHero.BreadCrumbTitle>
                             <PageHero.Title>Geo-Targeted Advertising for Maximum Impact</PageHero.Title>
                             <PageHero.Description className="">
-                                In the world of marketing, location is key. AdReach is the ultimate API service for geo-targeted advertising, enabling marketing and advertising firms to deliver highly relevant campaigns that resonate with the right audience at the right time. Leveraging the T2AL-Geo postcode system, AdReach provides precise location data that enhances targeting accuracy and campaign effectiveness.
+                                In the world of marketing, location is key. AdReach is the ultimate API service for geo-targeted advertising, enabling marketing and advertising firms to deliver highly relevant campaigns that resonate with the right audience at the right time. Leveraging the Loccode postcode system, AdReach provides precise location data that enhances targeting accuracy and campaign effectiveness.
                             </PageHero.Description>
                             <PageHero.ActionButtons>
                                 <PageHero.ActionLink to="/">

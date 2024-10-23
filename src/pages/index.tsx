@@ -17,7 +17,7 @@ const HomePage = () => {
                                 <PageHero.HeroListItem>Handle increasing user loads with confidence, knowing our API is built for growth.</PageHero.HeroListItem>
                             </PageHero.HeroList> */}
                             <PageHero.Description>
-                                We specialize in geospatial data and location intelligence solutions, helping businesses make smarter decisions, optimize operations, and uncover new opportunities with precision and accuracy.
+                                We specialize in geospatial data and location intelligence API solutions, helping businesses make smarter decisions, optimize operations, and uncover new opportunities with precision and accuracy.
                             </PageHero.Description>
                             <PageHero.ActionButtons>
                                 <PageHero.ActionLink to="/">

@@ -13,7 +13,7 @@ const PrivacyPolicy = () => {
                     <div className="w-full">
                         <h4 className="mb-4 text-neutral-90 ">Last Updated: September 16, 2024</h4>
                         <p className="text-neutral-70 text-xl">
-                            At Maiaddy Ltd, we are committed to safeguarding the privacy and security of our clients’ data and the data of their end users. This Privacy Policy outlines how we collect, use, disclose, and protect information when you use our location intelligence APIs, powered by T2AL-Geo, in your business operations.
+                            At Maiaddy Ltd, we are committed to safeguarding the privacy and security of our clients' data and the data of their end users. This Privacy Policy outlines how we collect, use, disclose, and protect information when you use our location intelligence APIs, powered by Loccode, in your business operations.
                         </p>
                     </div>
 
@@ -23,7 +23,7 @@ const PrivacyPolicy = () => {
                             We may collect the following types of information from our clients and their end users
                         </p>
                         <ul className="list-disc spacey-3 text-neutral-70 text-xl">
-                            <li>Location Data: Geographical coordinates, address details, and other location-related data used to generate accurate and reliable postcodes and location insights through our T2AL-Geo system.</li>
+                            <li>Location Data: Geographical coordinates, address details, and other location-related data used to generate accurate and reliable postcodes and location insights through our Loccode system.</li>
                             <li>API Usage Data: Information about how our APIs are accessed and used, including request logs, timestamps, IP addresses, and performance metrics.</li>
                             <li>Client Information: Contact details, company information, and billing details provided by our clients during account creation, subscription, or payment processes.</li>
                         </ul>
@@ -33,7 +33,7 @@ const PrivacyPolicy = () => {
                         <p className="text-neutral-70 text-xl mb-3"> Maiaddy Ltd uses the information we collect to: </p>
                         <ul className="list-disc spacey-3 text-neutral-70 text-xl">
                             <li>Provide and maintain our location intelligence API services.</li>
-                            <li> Enhance and optimize the performance of our T2AL-Geo system and related services.</li>
+                            <li> Enhance and optimize the performance of our Loccode system and related services.</li>
                             <li>Ensure compliance with legal and regulatory requirements.</li>
                             <li>Analyze API usage to improve our services and develop new features.</li>
                         </ul>

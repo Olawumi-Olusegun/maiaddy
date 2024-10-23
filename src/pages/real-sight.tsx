@@ -49,7 +49,7 @@ const RealSight = () => {
                             <PageHero.BreadCrumbTitle>RealSight</PageHero.BreadCrumbTitle>
                             <PageHero.Title>  The Future of Location-Driven Real Estate Intelligence</PageHero.Title>
                             <PageHero.Description className="">
-                                Welcome to RealSight, the cutting-edge solution for the real estate industry, powered by the innovative T2AL-Geo postcode system. RealSight offers unparalleled access to precise location data, transforming how real estate professionals, developers, and investors assess property values, analyze neighborhoods, and predict market trends in Africa. Designed with the unique challenges and opportunities of the African market in mind, RealSight provides the insights you need to make smarter, data-driven decisions and stay ahead of the competition.
+                                Welcome to RealSight, the cutting-edge solution for the real estate industry, powered by the innovative Loccode postcode system. RealSight offers unparalleled access to precise location data, transforming how real estate professionals, developers, and investors assess property values, analyze neighborhoods, and predict market trends in Africa. Designed with the unique challenges and opportunities of the African market in mind, RealSight provides the insights you need to make smarter, data-driven decisions and stay ahead of the competition.
                             </PageHero.Description>
                             <PageHero.ActionButtons>
                                 <PageHero.ActionLink to="/">
@@ -162,7 +162,7 @@ const RealSight = () => {
                             <div className="flex flex-col gap-8">
                                 <div className="flex items-start flex-wrap lg:gap-10">
                                     <h1 className="font-semibold w-full md:w-[212px] text-xl" >Location Precision</h1>
-                                    <p className="w-full md:max-w-[700px] text-xl">RealSight leverages the T2AL-Geo postcode system to provide the most precise location data available, ensuring that your real estate decisions are always based on the most accurate and detailed information.</p>
+                                    <p className="w-full md:max-w-[700px] text-xl">RealSight leverages the Loccode postcode system to provide the most precise location data available, ensuring that your real estate decisions are always based on the most accurate and detailed information.</p>
                                 </div>
                                 <div className="flex items-start flex-wrap lg:gap-10">
                                     <h1 className="font-semibold w-full md:w-[212px] text-xl" >African Market Focus</h1>

@@ -37,7 +37,7 @@ const SecureSite = () => {
                             <PageHero.BreadCrumbTitle>Secure Site</PageHero.BreadCrumbTitle>
                             <PageHero.Title>Location Intelligence for Financial Security</PageHero.Title>
                             <PageHero.Description className="">
-                                In the financial world, security and accuracy are paramount. SecureSite is the leading API service designed to enhance your KYC (Know Your Customer) processes, safeguard against fraud, and optimize your branch and ATM locations. Utilizing the robust T2AL-Geo postcode system, SecureSite provides precise location data, helping financial institutions make informed decisions with confidence.
+                                In the financial world, security and accuracy are paramount. SecureSite is the leading API service designed to enhance your KYC (Know Your Customer) processes, safeguard against fraud, and optimize your branch and ATM locations. Utilizing the robust Loccode postcode system, SecureSite provides precise location data, helping financial institutions make informed decisions with confidence.
                             </PageHero.Description>
                             <PageHero.ActionButtons>
                                 <PageHero.ActionLink to="/">

@@ -39,7 +39,7 @@ const TourMap = () => {
                             <PageHero.BreadCrumbTitle>TourMap</PageHero.BreadCrumbTitle>
                             <PageHero.Title> Unlock the Full Potential of Tourism with TourMap</PageHero.Title>
                             <PageHero.Description className="">
-                                In today's fast-paced world, travelers seek personalized experiences that cater to their unique preferences. The TourMap is your gateway to revolutionizing the travel and tourism industry. By harnessing the power of the T2AL-Geo postcode system, TourMap offers unparalleled precision in location-based services, making it easier than ever to guide tourists to the best attractions, accommodations, and dining experiences your region has to offer.
+                                In today's fast-paced world, travelers seek personalized experiences that cater to their unique preferences. The TourMap is your gateway to revolutionizing the travel and tourism industry. By harnessing the power of the Loccode postcode system, TourMap offers unparalleled precision in location-based services, making it easier than ever to guide tourists to the best attractions, accommodations, and dining experiences your region has to offer.
                             </PageHero.Description>
                             <PageHero.ActionButtons>
                                 <PageHero.ActionLink to="/">
@@ -128,7 +128,7 @@ const TourMap = () => {
                             <h2 className="text-gray-800 mb-8 font-bold">WHY CHOOOSE TOURMAP?</h2>
                             <div className="flex flex-col gap-8">
                                 <div className="flex items-start flex-wrap lg:gap-10">
-                                    <p className="w-full md:max-w-[700px] text-xl">TourMap is designed to seamlessly integrate with existing tourism platforms, travel apps, and local business networks. It offers the flexibility to deliver customized experiences while maintaining the reliability and accuracy of the T2AL-Geo postcode system. Whether you’re a travel agency, a tourism board, or a tech-savvy startup, TourMap equips you with the tools to attract more tourists, increase engagement, and boost local economies.</p>
+                                    <p className="w-full md:max-w-[700px] text-xl">TourMap is designed to seamlessly integrate with existing tourism platforms, travel apps, and local business networks. It offers the flexibility to deliver customized experiences while maintaining the reliability and accuracy of the Loccode postcode system. Whether you’re a travel agency, a tourism board, or a tech-savvy startup, TourMap equips you with the tools to attract more tourists, increase engagement, and boost local economies.</p>
                                 </div>
                             </div>
                         </div>

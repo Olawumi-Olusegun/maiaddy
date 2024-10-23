@@ -50,7 +50,7 @@ const InsurSight = () => {
                             <PageHero.BreadCrumbTitle>InsurSight</PageHero.BreadCrumbTitle>
                             <PageHero.Title>Transforming Location Intelligence into Insurance Excellence</PageHero.Title>
                             <PageHero.Description className="">
-                                Welcome to InsurSight, the ultimate location intelligence tool designed specifically for the insurance industry. Built on the precision and accuracy of the T2AL-Geo postcode system, InsurSight delivers unparalleled insights into risk assessment, underwriting, and claims management, tailored to the unique demands of the African market. Whether you're an insurer, reinsurer, or InsurTech firm, InsurSight provides the granular, location-based data you need to make informed, data-driven decisions that drive profitability and customer satisfaction.
+                                Welcome to InsurSight, the ultimate location intelligence tool designed specifically for the insurance industry. Built on the precision and accuracy of the Loccode postcode system, InsurSight delivers unparalleled insights into risk assessment, underwriting, and claims management, tailored to the unique demands of the African market. Whether you're an insurer, reinsurer, or InsurTech firm, InsurSight provides the granular, location-based data you need to make informed, data-driven decisions that drive profitability and customer satisfaction.
                             </PageHero.Description>
                             <PageHero.ActionButtons>
                                 <PageHero.ActionLink to="/">
@@ -156,7 +156,7 @@ const InsurSight = () => {
                             <div className="flex flex-col gap-8">
                                 <div className="flex items-start flex-wrap lg:gap-10">
                                     <h1 className="font-semibold w-full md:w-[212px] text-xl" >Precision and Accuracy</h1>
-                                    <p className="w-full md:max-w-[700px] text-xl">InsurSight leverages the powerful T2AL-Geo postcode system to deliver the most accurate and granular location data available. This precision allows you to assess risks with unparalleled accuracy, reducing uncertainties and improving underwriting outcomes.</p>
+                                    <p className="w-full md:max-w-[700px] text-xl">InsurSight leverages the powerful Loccode postcode system to deliver the most accurate and granular location data available. This precision allows you to assess risks with unparalleled accuracy, reducing uncertainties and improving underwriting outcomes.</p>
                                 </div>
                                 <div className="flex items-start flex-wrap lg:gap-10">
                                     <h1 className="font-semibold w-full md:w-[212px] text-xl" >Tailored for the African Market</h1>

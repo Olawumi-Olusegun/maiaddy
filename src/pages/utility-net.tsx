@@ -39,7 +39,7 @@ const UtilityNet = () => {
                             <PageHero.BreadCrumbTitle>UtilityNet</PageHero.BreadCrumbTitle>
                             <PageHero.Title> Optimizing Utility Services with Precision</PageHero.Title>
                             <PageHero.Description className="">
-                                For utility companies, accuracy and efficiency are crucial. UtilityNet is the specialized API service that empowers utility providers to optimize their infrastructure, plan maintenance, and respond to outages with precision. Utilizing the T2AL-Geo postcode system, UtilityNet ensures that every aspect of your utility operations is informed by the most accurate location data available.
+                                For utility companies, accuracy and efficiency are crucial. UtilityNet is the specialized API service that empowers utility providers to optimize their infrastructure, plan maintenance, and respond to outages with precision. Utilizing the Loccode postcode system, UtilityNet ensures that every aspect of your utility operations is informed by the most accurate location data available.
                             </PageHero.Description>
                             <PageHero.ActionButtons>
                                 <PageHero.ActionLink to="/">
