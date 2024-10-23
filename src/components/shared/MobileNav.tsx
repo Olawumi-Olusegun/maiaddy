@@ -73,28 +73,44 @@ export default function MobileNav() {
                 </div>
                 <nav className="flex flex-col gap-4 pt-1.5 pr-2 overflow-y-scroll maiaddy-custom-scrollbar">
                     {links.map((link, index) => (
-                        <div key={link.label + index}>
-                            <Link
-                                to={link.href}
-                                onClick={() => handleClick(index)}
-                                className={cn(
-                                    "text-muted w-full hover:cursor-pointer rounded-md font-semibold text-neutral-80 hover:text-accent hover:bg-primary-90 hover:text-white transition duration-300 ease-in-out py-2 px-2 flex items-center justify-between",
-                                    pathname === link.href && "bg-primary-90 text-white",
-                                    openedMenu === index && "bg-primary-90 text-white"
-                                )}
-                            >
-                                {link.label}
-                                {link.subLinks && (
-                                    <button>
-                                        <ChevronDown
-                                            className={cn(
-                                                "transition-all cursor-pointer duration-300",
-                                                openedMenu === index ? "rotate-180" : ""
-                                            )}
-                                        />
+                        <div key={`${link.label}-${index}`}>
+
+                            {
+                                link?.subLinks ? (
+                                    <button
+                                        onClick={() => handleClick(index)}
+                                        className={cn(
+                                            "text-muted w-full hover:cursor-pointer rounded-md font-semibold text-neutral-80 hover:text-accent hover:bg-primary-90 hover:text-white transition duration-300 ease-in-out py-2 px-2 flex items-center justify-between",
+                                            pathname === link.href && "bg-primary-90 text-white",
+                                            openedMenu === index && "bg-primary-90 text-white"
+                                        )}
+                                    >
+                                        {link.label}
+                                        {link.subLinks && (
+                                            <button>
+                                                <ChevronDown
+                                                    className={cn(
+                                                        "transition-all cursor-pointer duration-300",
+                                                        openedMenu === index ? "rotate-180" : ""
+                                                    )}
+                                                />
+                                            </button>
+                                        )}
                                     </button>
-                                )}
-                            </Link>
+                                )
+                                    : (
+                                        <Link
+                                            to={link.href}
+                                            className={cn(
+                                                "text-muted w-full hover:cursor-pointer rounded-md font-semibold text-neutral-80 hover:text-accent hover:bg-primary-90 hover:text-white transition duration-300 ease-in-out py-2 px-2 flex items-center justify-between",
+                                                pathname === link.href && "bg-primary-90 text-white",
+                                                openedMenu === index && "bg-primary-90 text-white"
+                                            )}
+                                        >
+                                            {link.label}
+                                        </Link>
+                                    )
+                            }
                             {openedMenu === index && (
                                 <div className="pl-2 mt-1.5 ">
                                     {link.subLinks?.map((subLink, idx) => (
