@@ -157,7 +157,7 @@ const CiviSync = () => {
                                 Join the Digital Revolution with CiviSync
                             </ActionCard.Title>
                             <ActionCard.SubTitle>
-                                CiviSync is more than just a suite of APIs—it's a pathway to modern, efficient, and responsive governance. Join the many governments and public agencies across Africa that are transforming their operations with CiviSync.
+                                CiviSync is more than just a suite of APIs—it’s a pathway to modern, efficient, and responsive governance. Join the many governments and public agencies across Africa that are transforming their operations with CiviSync.
                             </ActionCard.SubTitle>
                             <ActionCard.ActionButtons>
                                 <ActionCard.ActionLink to="/">

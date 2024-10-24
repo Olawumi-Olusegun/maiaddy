@@ -151,9 +151,9 @@ const CellGrid = () => {
                             <Pricing.Content>
                                 <Pricing.Head>
                                     <Pricing.HeadContent>
-                                        <Pricing.Type>Free Tie</Pricing.Type>
+                                        <Pricing.Type>Free Tier</Pricing.Type>
                                         <Pricing.Description>
-                                            This tier is designed for businesses to test NavOptix and understand how it integrates into their systems.
+                                            This tier is designed for businesses to test CellGrid and understand how it integrates into their systems.
                                         </Pricing.Description>
                                         <Pricing.ActionButtons>
                                             <Pricing.ActionLink to="/">
@@ -169,7 +169,7 @@ const CellGrid = () => {
                                 </Pricing.Head>
                                 <Pricing.Grid>
                                     <Pricing.GridCard>
-                                        <Pricing.GridCardTitle>What's included now</Pricing.GridCardTitle>
+                                        <Pricing.GridCardTitle>What's included</Pricing.GridCardTitle>
                                         <Pricing.GridCardList>
                                             <Pricing.GridCardListItem>
                                                 <Pricing.Icon>
@@ -295,7 +295,7 @@ const CellGrid = () => {
                                 </Pricing.Head>
                                 <Pricing.Grid>
                                     <Pricing.GridCard>
-                                        <Pricing.GridCardTitle>What's included now</Pricing.GridCardTitle>
+                                        <Pricing.GridCardTitle>What's included</Pricing.GridCardTitle>
                                         <Pricing.GridCardList>
                                             <Pricing.GridCardListItem>
                                                 <Pricing.Icon>
@@ -355,7 +355,7 @@ const CellGrid = () => {
                                                         <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
                                                     </svg>
                                                 </Pricing.Icon>
-                                                <span className="text-sm text-neutral-70 font-normal ">Basic customer support (email, 1-day response time).
+                                                <span className="text-sm text-neutral-70 font-normal">Basic customer support (email, 1-day response time).
                                                 </span>
                                             </Pricing.GridCardListItem>
                                         </Pricing.GridCardList>
@@ -436,7 +436,7 @@ const CellGrid = () => {
                                 </Pricing.Head>
                                 <Pricing.Grid>
                                     <Pricing.GridCard>
-                                        <Pricing.GridCardTitle>What's included now</Pricing.GridCardTitle>
+                                        <Pricing.GridCardTitle>What's included</Pricing.GridCardTitle>
                                         <Pricing.GridCardList>
                                             <Pricing.GridCardListItem>
                                                 <Pricing.Icon>
@@ -582,7 +582,7 @@ const CellGrid = () => {
                                 </Pricing.Head>
                                 <Pricing.Grid>
                                     <Pricing.GridCard>
-                                        <Pricing.GridCardTitle>What's included now</Pricing.GridCardTitle>
+                                        <Pricing.GridCardTitle>What's included</Pricing.GridCardTitle>
                                         <Pricing.GridCardList>
                                             <Pricing.GridCardListItem>
                                                 <Pricing.Icon>
@@ -590,7 +590,7 @@ const CellGrid = () => {
                                                         <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
                                                     </svg>
                                                 </Pricing.Icon>
-                                                <span className="text-sm text-neutral-70 font-normal ">Unlimited geocoding and address verification requests.</span>
+                                                <span className="text-sm text-neutral-70 font-normal ">Unlimited geocoding, address verification, and route optimization requests.</span>
                                             </Pricing.GridCardListItem>
 
                                             <Pricing.GridCardListItem>
@@ -599,7 +599,7 @@ const CellGrid = () => {
                                                         <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
                                                     </svg>
                                                 </Pricing.Icon>
-                                                <span className="text-sm text-neutral-70 font-normal ">Dynamic route optimization for up to 500 routes/day, with on-the-fly updates based on real-time traffic and delivery demands.</span>
+                                                <span className="text-sm text-neutral-70 font-normal ">Full access to all NavOptix features, including custom API development for highly specific use cases.</span>
                                             </Pricing.GridCardListItem>
 
                                             <Pricing.GridCardListItem>
@@ -608,7 +608,7 @@ const CellGrid = () => {
                                                         <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
                                                     </svg>
                                                 </Pricing.Icon>
-                                                <span className="text-sm text-neutral-70 font-normal ">Accurate ETA calculations with full integration of real-time data, ensuring precise ETAs at scale.</span>
+                                                <span className="text-sm text-neutral-70 font-normal ">Custom route optimization algorithms tailored to the client's business.</span>
                                             </Pricing.GridCardListItem>
 
                                             <Pricing.GridCardListItem>
@@ -617,7 +617,7 @@ const CellGrid = () => {
                                                         <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
                                                     </svg>
                                                 </Pricing.Icon>
-                                                <span className="text-sm text-neutral-70 font-normal ">Full district and neighborhood identification using Loccode system for more granular delivery accuracy.</span>
+                                                <span className="text-sm text-neutral-70 font-normal ">In-depth analytics and machine learning tools to predict and optimize delivery routes and times.</span>
                                             </Pricing.GridCardListItem>
                                             <Pricing.GridCardListItem>
                                                 <Pricing.Icon>
@@ -625,7 +625,7 @@ const CellGrid = () => {
                                                         <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
                                                     </svg>
                                                 </Pricing.Icon>
-                                                <span className="text-sm text-neutral-70 font-normal ">Real-time navigation with exact pick-up and drop-off guidance for drivers.</span>
+                                                <span className="text-sm text-neutral-70 font-normal ">Dedicated account manager and 24/7 premium support.</span>
                                             </Pricing.GridCardListItem>
                                             <Pricing.GridCardListItem>
                                                 <Pricing.Icon>
@@ -633,36 +633,10 @@ const CellGrid = () => {
                                                         <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
                                                     </svg>
                                                 </Pricing.Icon>
-                                                <span className="text-sm text-neutral-70 font-normal ">Scalable integration, allowing the business to manage larger fleets and more complex delivery networks.
+                                                <span className="text-sm text-neutral-70 font-normal ">Unlimited users and full organizational scalability.
                                                 </span>
                                             </Pricing.GridCardListItem>
-                                            <Pricing.GridCardListItem>
-                                                <Pricing.Icon>
-                                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
-                                                    </svg>
-                                                </Pricing.Icon>
-                                                <span className="text-sm text-neutral-70 font-normal ">Advanced analytics and reporting tools (e.g., route efficiency, driver performance).
-                                                </span>
-                                            </Pricing.GridCardListItem>
-                                            <Pricing.GridCardListItem>
-                                                <Pricing.Icon>
-                                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
-                                                    </svg>
-                                                </Pricing.Icon>
-                                                <span className="text-sm text-neutral-70 font-normal ">Priority customer support (phone, email, live chat, same-day response).
-                                                </span>
-                                            </Pricing.GridCardListItem>
-                                            <Pricing.GridCardListItem>
-                                                <Pricing.Icon>
-                                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
-                                                    </svg>
-                                                </Pricing.Icon>
-                                                <span className="text-sm text-neutral-70 font-normal ">Up to 20 active users.
-                                                </span>
-                                            </Pricing.GridCardListItem>
+
                                         </Pricing.GridCardList>
                                     </Pricing.GridCard>
 

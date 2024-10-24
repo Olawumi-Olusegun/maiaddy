@@ -152,9 +152,9 @@ const SecureSite = () => {
                             <Pricing.Content>
                                 <Pricing.Head>
                                     <Pricing.HeadContent>
-                                        <Pricing.Type>Free Tie</Pricing.Type>
+                                        <Pricing.Type>Free Tier</Pricing.Type>
                                         <Pricing.Description>
-                                            This tier is designed for businesses to test NavOptix and understand how it integrates into their systems.
+                                            This tier is designed for businesses to test SecureSite and understand how it integrates into their systems.
                                         </Pricing.Description>
                                         <Pricing.ActionButtons>
                                             <Pricing.ActionLink to="/">
@@ -165,12 +165,12 @@ const SecureSite = () => {
                                     <Pricing.Price>
                                         <sup className="font-semibold text-2xl">N</sup>
                                         <span className="font-semibold text-5xl">0</span>
-                                        <sub>30-day trial</sub>
+                                        <sub>30-days trial</sub>
                                     </Pricing.Price>
                                 </Pricing.Head>
                                 <Pricing.Grid>
                                     <Pricing.GridCard>
-                                        <Pricing.GridCardTitle>What's included now</Pricing.GridCardTitle>
+                                        <Pricing.GridCardTitle>What's included</Pricing.GridCardTitle>
                                         <Pricing.GridCardList>
                                             <Pricing.GridCardListItem>
                                                 <Pricing.Icon>
@@ -242,13 +242,13 @@ const SecureSite = () => {
                                     </Pricing.HeadContent>
                                     <Pricing.Price>
                                         <sup className="font-semibold text-2xl">N</sup>
-                                        <span className="font-semibold text-5xl">25,000</span>
+                                        <span className="font-semibold text-5xl">100,000</span>
                                         <sub>per month</sub>
                                     </Pricing.Price>
                                 </Pricing.Head>
                                 <Pricing.Grid className="xl:grid-cols-12">
                                     <Pricing.GridCard className="xl:col-span-7">
-                                        <Pricing.GridCardTitle>What's included now</Pricing.GridCardTitle>
+                                        <Pricing.GridCardTitle>What's included</Pricing.GridCardTitle>
                                         <Pricing.GridCardList className="lg:max-w-full">
                                             <Pricing.GridCardListItem>
                                                 <Pricing.Icon>
@@ -257,6 +257,91 @@ const SecureSite = () => {
                                                     </svg>
                                                 </Pricing.Icon>
                                                 <span className="text-sm text-neutral-70 font-normal ">1,000 API calls per month.</span>
+                                            </Pricing.GridCardListItem>
+
+                                            <Pricing.GridCardListItem>
+                                                <Pricing.Icon>
+                                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
+                                                    </svg>
+                                                </Pricing.Icon>
+                                                <span className="text-sm text-neutral-70 font-normal ">Full access to Loccode system for accurate client address verification.</span>
+                                            </Pricing.GridCardListItem>
+
+                                            <Pricing.GridCardListItem>
+                                                <Pricing.Icon>
+                                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
+                                                    </svg>
+                                                </Pricing.Icon>
+                                                <span className="text-sm text-neutral-70 font-normal ">Review and flag up to 500 transactions per month based on locational anomalies.</span>
+                                            </Pricing.GridCardListItem>
+
+                                            <Pricing.GridCardListItem>
+                                                <Pricing.Icon>
+                                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
+                                                    </svg>
+                                                </Pricing.Icon>
+                                                <span className="text-sm text-neutral-70 font-normal ">Optimize placement for up to 5 branches or ATMs based on customer density and reach.</span>
+                                            </Pricing.GridCardListItem>
+                                            <Pricing.GridCardListItem>
+                                                <Pricing.Icon>
+                                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
+                                                    </svg>
+                                                </Pricing.Icon>
+                                                <span className="text-sm text-neutral-70 font-normal ">Verify up to 500 customer profiles for compliance with KYC and AML regulations.</span>
+                                            </Pricing.GridCardListItem>
+                                            <Pricing.GridCardListItem>
+                                                <Pricing.Icon>
+                                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
+                                                    </svg>
+                                                </Pricing.Icon>
+                                                <span className="text-sm text-neutral-70 font-normal ">Basic reporting and analytics to track API usage and fraud detection trends.
+                                                </span>
+                                            </Pricing.GridCardListItem>
+
+                                        </Pricing.GridCardList>
+                                    </Pricing.GridCard>
+
+                                </Pricing.Grid>
+                            </Pricing.Content>
+                        </Pricing>
+
+                        {/* Professional Tier */}
+                        <Pricing>
+                            <Pricing.Content>
+                                <Pricing.Head>
+                                    <Pricing.HeadContent>
+                                        <Pricing.Type>Professional Tier</Pricing.Type>
+                                        <Pricing.Description>
+                                            For mid-to-large banks, payment service providers, and credit institutions aiming to automate fraud detection and scale location-based decision-making.
+                                        </Pricing.Description>
+                                        <Pricing.ActionButtons>
+                                            <Pricing.ActionLink to="/">
+                                                Get Started
+                                            </Pricing.ActionLink>
+                                        </Pricing.ActionButtons>
+                                    </Pricing.HeadContent>
+                                    <Pricing.Price>
+                                        <sup className="font-semibold text-2xl">N</sup>
+                                        <span className="font-semibold text-5xl">250,000</span>
+                                        <sub>per month</sub>
+                                    </Pricing.Price>
+                                </Pricing.Head>
+                                <Pricing.Grid className="xl:grid-cols-12">
+                                    <Pricing.GridCard className="xl:col-span-7">
+                                        <Pricing.GridCardTitle>What's included</Pricing.GridCardTitle>
+                                        <Pricing.GridCardList className="lg:max-w-full">
+                                            <Pricing.GridCardListItem>
+                                                <Pricing.Icon>
+                                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
+                                                    </svg>
+                                                </Pricing.Icon>
+                                                <span className="text-sm text-neutral-70 font-normal ">10,000 API calls per month.</span>
                                             </Pricing.GridCardListItem>
 
                                             <Pricing.GridCardListItem>
@@ -299,6 +384,15 @@ const SecureSite = () => {
                                                         <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
                                                     </svg>
                                                 </Pricing.Icon>
+                                                <span className="text-sm text-neutral-70 font-normal ">Segment your customer base into categories like commercial & industrial, mini grids, and energy systems, and analyze their consumption patterns to optimize billing and service offerings.
+                                                </span>
+                                            </Pricing.GridCardListItem>
+                                            <Pricing.GridCardListItem>
+                                                <Pricing.Icon>
+                                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
+                                                    </svg>
+                                                </Pricing.Icon>
                                                 <span className="text-sm text-neutral-70 font-normal ">Enhanced verification for up to 2,000 profiles, with real-time reporting for regulatory audits.
                                                 </span>
                                             </Pricing.GridCardListItem>
@@ -311,7 +405,6 @@ const SecureSite = () => {
                                                 <span className="text-sm text-neutral-70 font-normal ">Advanced reporting with trend analysis, fraud detection patterns, and real-time API usage monitoring.
                                                 </span>
                                             </Pricing.GridCardListItem>
-
                                             <Pricing.GridCardListItem>
                                                 <Pricing.Icon>
                                                     <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -319,108 +412,6 @@ const SecureSite = () => {
                                                     </svg>
                                                 </Pricing.Icon>
                                                 <span className="text-sm text-neutral-70 font-normal ">Faster response times with dedicated account managers for technical support.
-                                                </span>
-                                            </Pricing.GridCardListItem>
-                                        </Pricing.GridCardList>
-                                    </Pricing.GridCard>
-
-                                </Pricing.Grid>
-                            </Pricing.Content>
-                        </Pricing>
-
-                        {/* Professional Tier */}
-                        <Pricing>
-                            <Pricing.Content>
-                                <Pricing.Head>
-                                    <Pricing.HeadContent>
-                                        <Pricing.Type>Professional Tier</Pricing.Type>
-                                        <Pricing.Description>
-                                            For mid-to-large banks, payment service providers, and credit institutions aiming to automate fraud detection and scale location-based decision-making.
-                                        </Pricing.Description>
-                                        <Pricing.ActionButtons>
-                                            <Pricing.ActionLink to="/">
-                                                Get Started
-                                            </Pricing.ActionLink>
-                                        </Pricing.ActionButtons>
-                                    </Pricing.HeadContent>
-                                    <Pricing.Price>
-                                        <sup className="font-semibold text-2xl">N</sup>
-                                        <span className="font-semibold text-5xl">100,000</span>
-                                        <sub>per month</sub>
-                                    </Pricing.Price>
-                                </Pricing.Head>
-                                <Pricing.Grid className="xl:grid-cols-12">
-                                    <Pricing.GridCard className="xl:col-span-7">
-                                        <Pricing.GridCardTitle>What's included now</Pricing.GridCardTitle>
-                                        <Pricing.GridCardList className="lg:max-w-full">
-                                            <Pricing.GridCardListItem>
-                                                <Pricing.Icon>
-                                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
-                                                    </svg>
-                                                </Pricing.Icon>
-                                                <span className="text-sm text-neutral-70 font-normal ">50,000 requests per day.</span>
-                                            </Pricing.GridCardListItem>
-
-                                            <Pricing.GridCardListItem>
-                                                <Pricing.Icon>
-                                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
-                                                    </svg>
-                                                </Pricing.Icon>
-                                                <span className="text-sm text-neutral-70 font-normal ">All Essential Tier Features</span>
-                                            </Pricing.GridCardListItem>
-
-                                            <Pricing.GridCardListItem>
-                                                <Pricing.Icon>
-                                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
-                                                    </svg>
-                                                </Pricing.Icon>
-                                                <span className="text-sm text-neutral-70 font-normal ">Access to advanced geocoding services for more detailed customer management and infrastructure planning. Convert both addresses to Loccodes and Loccodes back to traditional addresses with ease.</span>
-                                            </Pricing.GridCardListItem>
-
-                                            <Pricing.GridCardListItem>
-                                                <Pricing.Icon>
-                                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
-                                                    </svg>
-                                                </Pricing.Icon>
-                                                <span className="text-sm text-neutral-70 font-normal ">Leverage precise geographic data to plan the placement and management of utility assets such as mini grids, energy systems, and distribution networks.</span>
-                                            </Pricing.GridCardListItem>
-                                            <Pricing.GridCardListItem>
-                                                <Pricing.Icon>
-                                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
-                                                    </svg>
-                                                </Pricing.Icon>
-                                                <span className="text-sm text-neutral-70 font-normal ">Improve your response to utility outages by accurately pinpointing locations and restoring services quickly. This feature is critical for minimizing downtime, especially in areas relying on pay-as-you-go services.</span>
-                                            </Pricing.GridCardListItem>
-                                            <Pricing.GridCardListItem>
-                                                <Pricing.Icon>
-                                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
-                                                    </svg>
-                                                </Pricing.Icon>
-                                                <span className="text-sm text-neutral-70 font-normal ">Segment your customer base into categories like commercial & industrial, mini grids, and energy systems, and analyze their consumption patterns to optimize billing and service offerings.
-                                                </span>
-                                            </Pricing.GridCardListItem>
-                                            <Pricing.GridCardListItem>
-                                                <Pricing.Icon>
-                                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
-                                                    </svg>
-                                                </Pricing.Icon>
-                                                <span className="text-sm text-neutral-70 font-normal ">Visualize location data, customer distribution, and service efficiency using a comprehensive dashboard for better decision-making.
-                                                </span>
-                                            </Pricing.GridCardListItem>
-                                            <Pricing.GridCardListItem>
-                                                <Pricing.Icon>
-                                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
-                                                    </svg>
-                                                </Pricing.Icon>
-                                                <span className="text-sm text-neutral-70 font-normal ">Priority email support and chat-based assistance during business hours.
                                                 </span>
                                             </Pricing.GridCardListItem>
 
@@ -469,22 +460,18 @@ const SecureSite = () => {
                                 <Pricing.Head>
                                     <Pricing.HeadContent>
                                         <Pricing.Type>Enterprise Tier (Custom Pricing)</Pricing.Type>
-                                        <Pricing.Description>For large financial institutions, government agencies, and multinational banks requiring large-scale location intelligence and fraud prevention capabilities.</Pricing.Description>
+                                        <Pricing.Description>This tier is designed for very large companies or businesses with complex logistics needs.</Pricing.Description>
                                         <Pricing.ActionButtons>
                                             <Pricing.ActionLink to="/">
                                                 Get Started
                                             </Pricing.ActionLink>
                                         </Pricing.ActionButtons>
                                     </Pricing.HeadContent>
-                                    <Pricing.Price>
-                                        <sup className="font-semibold text-2xl">N</sup>
-                                        <span className="font-semibold text-5xl">500,000</span>
-                                        <sub>per month</sub>
-                                    </Pricing.Price>
+
                                 </Pricing.Head>
                                 <Pricing.Grid className="xl:grid-cols-12">
                                     <Pricing.GridCard className="xl:col-span-7">
-                                        <Pricing.GridCardTitle>What's included now</Pricing.GridCardTitle>
+                                        <Pricing.GridCardTitle>What's included</Pricing.GridCardTitle>
                                         <Pricing.GridCardList className="lg:max-w-full">
                                             <Pricing.GridCardListItem>
                                                 <Pricing.Icon>
@@ -492,7 +479,7 @@ const SecureSite = () => {
                                                         <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
                                                     </svg>
                                                 </Pricing.Icon>
-                                                <span className="text-sm text-neutral-70 font-normal "> 100,000+ API calls per month (customizable based on volume).</span>
+                                                <span className="text-sm text-neutral-70 font-normal ">100,000+ API calls per month (customizable based on volume).</span>
                                             </Pricing.GridCardListItem>
 
                                             <Pricing.GridCardListItem>
@@ -586,7 +573,7 @@ const SecureSite = () => {
                                                         <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
                                                     </svg>
                                                 </Pricing.Icon>
-                                                <span className="text-sm text-neutral-70 font-normal ">Custom Loccode Reports: ₦30,000 per report for detailed locational insights on specific regions or customer segments.</span>
+                                                <span className="text-sm text-neutral-70 font-normal ">Custom Loccode Reports: ₦100,000 per report for detailed locational insights on specific regions or customer segments.</span>
                                             </Pricing.GridCardListItem>
 
                                         </Pricing.GridCardList>

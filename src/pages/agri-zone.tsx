@@ -195,9 +195,9 @@ const AgriZone = () => {
                             <Pricing.Content>
                                 <Pricing.Head>
                                     <Pricing.HeadContent>
-                                        <Pricing.Type>Free Tie</Pricing.Type>
+                                        <Pricing.Type>Free Tier</Pricing.Type>
                                         <Pricing.Description>
-                                            This tier is designed for businesses to test NavOptix and understand how it integrates into their systems.
+                                            This tier is designed for businesses to test AgriZone and understand how it integrates into their systems.
                                         </Pricing.Description>
                                         <Pricing.ActionButtons>
                                             <Pricing.ActionLink to="/">
@@ -213,7 +213,7 @@ const AgriZone = () => {
                                 </Pricing.Head>
                                 <Pricing.Grid>
                                     <Pricing.GridCard>
-                                        <Pricing.GridCardTitle>What's included now</Pricing.GridCardTitle>
+                                        <Pricing.GridCardTitle>What's included</Pricing.GridCardTitle>
                                         <Pricing.GridCardList>
                                             <Pricing.GridCardListItem>
                                                 <Pricing.Icon>
@@ -339,7 +339,7 @@ const AgriZone = () => {
                                 </Pricing.Head>
                                 <Pricing.Grid>
                                     <Pricing.GridCard>
-                                        <Pricing.GridCardTitle>What's included now</Pricing.GridCardTitle>
+                                        <Pricing.GridCardTitle>What's included</Pricing.GridCardTitle>
                                         <Pricing.GridCardList>
                                             <Pricing.GridCardListItem>
                                                 <Pricing.Icon>
@@ -464,7 +464,7 @@ const AgriZone = () => {
                                     <Pricing.HeadContent>
                                         <Pricing.Type>Professional Tier</Pricing.Type>
                                         <Pricing.Description>
-                                            This tier is designed for very large companies or businesses with complex logistics needs.
+                                            For larger delivery networks and businesses that require advanced route management and scalability.
                                         </Pricing.Description>
                                         <Pricing.ActionButtons>
                                             <Pricing.ActionLink to="/">
@@ -480,7 +480,7 @@ const AgriZone = () => {
                                 </Pricing.Head>
                                 <Pricing.Grid>
                                     <Pricing.GridCard>
-                                        <Pricing.GridCardTitle>What's included now</Pricing.GridCardTitle>
+                                        <Pricing.GridCardTitle>What's included</Pricing.GridCardTitle>
                                         <Pricing.GridCardList>
                                             <Pricing.GridCardListItem>
                                                 <Pricing.Icon>
@@ -488,7 +488,7 @@ const AgriZone = () => {
                                                         <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
                                                     </svg>
                                                 </Pricing.Icon>
-                                                <span className="text-sm text-neutral-70 font-normal ">Full access to all NavOptix features, including custom API development for highly specific use cases.</span>
+                                                <span className="text-sm text-neutral-70 font-normal ">Unlimited geocoding and address verification requests.</span>
                                             </Pricing.GridCardListItem>
 
                                             <Pricing.GridCardListItem>
@@ -618,7 +618,7 @@ const AgriZone = () => {
                                         </Pricing.Description>
                                         <Pricing.ActionButtons>
                                             <Pricing.ActionLink to="/">
-                                                Get Started
+                                                Contact Sales
                                             </Pricing.ActionLink>
                                         </Pricing.ActionButtons>
                                     </Pricing.HeadContent>
@@ -626,7 +626,7 @@ const AgriZone = () => {
                                 </Pricing.Head>
                                 <Pricing.Grid>
                                     <Pricing.GridCard>
-                                        <Pricing.GridCardTitle>What's included now</Pricing.GridCardTitle>
+                                        <Pricing.GridCardTitle>What's included</Pricing.GridCardTitle>
                                         <Pricing.GridCardList>
                                             <Pricing.GridCardListItem>
                                                 <Pricing.Icon>
@@ -634,7 +634,7 @@ const AgriZone = () => {
                                                         <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
                                                     </svg>
                                                 </Pricing.Icon>
-                                                <span className="text-sm text-neutral-70 font-normal ">Unlimited geocoding and address verification requests.</span>
+                                                <span className="text-sm text-neutral-70 font-normal ">Unlimited geocoding, address verification, and route optimization requests.</span>
                                             </Pricing.GridCardListItem>
 
                                             <Pricing.GridCardListItem>
@@ -687,10 +687,7 @@ const AgriZone = () => {
                                 </Pricing.Grid>
                             </Pricing.Content>
                         </Pricing>
-
-
                     </div>
-
 
                     <ActionCard>
                         <ActionCard.Body>

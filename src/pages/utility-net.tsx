@@ -141,7 +141,7 @@ const UtilityNet = () => {
                                         </FeatureCard.Description>
                                     </FeatureCard.GridArticle>
                                     <FeatureCard.Image className="md:col-span-5">
-                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/billboard.png" alt="billboard" />
+                                        <img className="w-full h-[200px] object-cover pointer-events-none rounded-lg" src="./assets/images/utility-net-use-cases.png" alt="utility-net-use-cases" />
                                     </FeatureCard.Image>
                                 </FeatureCard.Grid>
                             </FeatureCard.Body>
@@ -154,7 +154,7 @@ const UtilityNet = () => {
                             <Pricing.Content>
                                 <Pricing.Head>
                                     <Pricing.HeadContent>
-                                        <Pricing.Type>Free Tie</Pricing.Type>
+                                        <Pricing.Type>Free Tier</Pricing.Type>
                                         <Pricing.Description>
                                             Explore UtilityNet's capabilities and see how it can improve their utility service delivery before subscribing to a paid plan.
                                         </Pricing.Description>
@@ -172,7 +172,7 @@ const UtilityNet = () => {
                                 </Pricing.Head>
                                 <Pricing.Grid>
                                     <Pricing.GridCard>
-                                        <Pricing.GridCardTitle>What's included now</Pricing.GridCardTitle>
+                                        <Pricing.GridCardTitle>What's included</Pricing.GridCardTitle>
                                         <Pricing.GridCardList>
                                             <Pricing.GridCardListItem>
                                                 <Pricing.Icon>
@@ -189,7 +189,7 @@ const UtilityNet = () => {
                                                         <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
                                                     </svg>
                                                 </Pricing.Icon>
-                                                <span className="text-sm text-neutral-70 font-normal ">Static route optimization for up to 3 routes/day.</span>
+                                                <span className="text-sm text-neutral-70 font-normal ">Basic geolocation features (LGA and District data).</span>
                                             </Pricing.GridCardListItem>
 
                                             <Pricing.GridCardListItem>
@@ -198,7 +198,7 @@ const UtilityNet = () => {
                                                         <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
                                                     </svg>
                                                 </Pricing.Icon>
-                                                <span className="text-sm text-neutral-70 font-normal ">Basic geolocation features (LGA and District data).</span>
+                                                <span className="text-sm text-neutral-70 font-normal ">Email support only.</span>
                                             </Pricing.GridCardListItem>
 
                                         </Pricing.GridCardList>
@@ -215,7 +215,6 @@ const UtilityNet = () => {
                                 <Pricing.Head>
                                     <Pricing.HeadContent>
                                         <Pricing.Type>Essential Tier</Pricing.Type>
-
                                         <Pricing.ActionButtons>
                                             <Pricing.ActionLink to="/">
                                                 Get Started
@@ -230,7 +229,7 @@ const UtilityNet = () => {
                                 </Pricing.Head>
                                 <Pricing.Grid className="xl:grid-cols-12">
                                     <Pricing.GridCard className="xl:col-span-7">
-                                        <Pricing.GridCardTitle>What's included now</Pricing.GridCardTitle>
+                                        <Pricing.GridCardTitle>What's included</Pricing.GridCardTitle>
                                         <Pricing.GridCardList className="lg:max-w-full">
                                             <Pricing.GridCardListItem>
                                                 <Pricing.Icon>
@@ -256,17 +255,9 @@ const UtilityNet = () => {
                                                         <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
                                                     </svg>
                                                 </Pricing.Icon>
-                                                <span className="text-sm text-neutral-70 font-normal ">Accurate ETA calculations based on real-time traffic and road conditions.</span>
-                                            </Pricing.GridCardListItem>
-
-                                            <Pricing.GridCardListItem>
-                                                <Pricing.Icon>
-                                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
-                                                    </svg>
-                                                </Pricing.Icon>
                                                 <span className="text-sm text-neutral-70 font-normal ">Provides detailed geographic information, including state, LGA, and district data, to help utility providers understand where their customers are located.</span>
                                             </Pricing.GridCardListItem>
+
                                             <Pricing.GridCardListItem>
                                                 <Pricing.Icon>
                                                     <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -294,15 +285,6 @@ const UtilityNet = () => {
                                                 </span>
                                             </Pricing.GridCardListItem>
 
-                                            <Pricing.GridCardListItem>
-                                                <Pricing.Icon>
-                                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fillRule="evenodd" clipRule="evenodd" d="M11.098 0.389671L3.93797 7.29967L2.03797 5.26967C1.68797 4.93967 1.13797 4.91967 0.737968 5.19967C0.347968 5.48967 0.237968 5.99967 0.477968 6.40967L2.72797 10.0697C2.94797 10.4097 3.32797 10.6197 3.75797 10.6197C4.16797 10.6197 4.55797 10.4097 4.77797 10.0697C5.13797 9.59967 12.008 1.40967 12.008 1.40967C12.908 0.489671 11.818 -0.320329 11.098 0.379671V0.389671Z" fill="#336699" />
-                                                    </svg>
-                                                </Pricing.Icon>
-                                                <span className="text-sm text-neutral-70 font-normal ">Basic customer support (email, 1-day response time).
-                                                </span>
-                                            </Pricing.GridCardListItem>
                                         </Pricing.GridCardList>
                                     </Pricing.GridCard>
 
@@ -348,9 +330,6 @@ const UtilityNet = () => {
                                 <Pricing.Head>
                                     <Pricing.HeadContent>
                                         <Pricing.Type>Professional Tier</Pricing.Type>
-                                        <Pricing.Description>
-                                            For larger delivery networks and businesses that require advanced route management and scalability.
-                                        </Pricing.Description>
                                         <Pricing.ActionButtons>
                                             <Pricing.ActionLink to="/">
                                                 Get Started
@@ -365,7 +344,7 @@ const UtilityNet = () => {
                                 </Pricing.Head>
                                 <Pricing.Grid className="xl:grid-cols-12">
                                     <Pricing.GridCard className="xl:col-span-7">
-                                        <Pricing.GridCardTitle>What's included now</Pricing.GridCardTitle>
+                                        <Pricing.GridCardTitle>What's included</Pricing.GridCardTitle>
                                         <Pricing.GridCardList className="lg:max-w-full">
                                             <Pricing.GridCardListItem>
                                                 <Pricing.Icon>
@@ -497,7 +476,7 @@ const UtilityNet = () => {
                                 </Pricing.Head>
                                 <Pricing.Grid className="xl:grid-cols-12">
                                     <Pricing.GridCard className="xl:col-span-7">
-                                        <Pricing.GridCardTitle>What's included now</Pricing.GridCardTitle>
+                                        <Pricing.GridCardTitle>What's included</Pricing.GridCardTitle>
                                         <Pricing.GridCardList className="lg:max-w-full">
                                             <Pricing.GridCardListItem>
                                                 <Pricing.Icon>
