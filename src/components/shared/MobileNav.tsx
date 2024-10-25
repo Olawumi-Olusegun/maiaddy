@@ -125,28 +125,21 @@ export default function MobileNav() {
                                 <div className="pl-2 mt-1.5 ">
                                     {link.subLinks?.map((subLink, idx) => (
                                         <React.Fragment key={idx}>
-                                            {subLink.header && (
-                                                <div className="space-y-2 border-l">
-                                                    {subLink.subMenu && (
-                                                        <>
-                                                            {subLink.subMenu.map((subItem) => (
-                                                                <Link
-                                                                    to={subItem.href}
-                                                                    key={subItem.label}
-                                                                    className="p-2 hover:bg-primary-90/80 hover:text-white duration-300 block text-sm transition pl-4"
-                                                                >
-                                                                    {subItem.label}
-                                                                </Link>
-                                                            ))}
-                                                        </>
-                                                    )}
-                                                </div>
-                                            )}
-                                            {subLink.subImages?.map((subImage) => (
-                                                <Link key={subImage.label} to={subImage.href}>
-                                                    {subImage.label}
-                                                </Link>
-                                            ))}
+                                            <div className="space-y-2 border-l">
+                                                {subLink.subMenu && (
+                                                    <>
+                                                        {subLink.subMenu.map((subItem) => (
+                                                            <Link
+                                                                to={subItem.href}
+                                                                key={subItem.label}
+                                                                className="p-2 hover:bg-primary-90/80 hover:text-white duration-300 block text-sm transition pl-4"
+                                                            >
+                                                                {subItem.label}
+                                                            </Link>
+                                                        ))}
+                                                    </>
+                                                )}
+                                            </div>
                                         </React.Fragment>
                                     ))}
                                 </div>
