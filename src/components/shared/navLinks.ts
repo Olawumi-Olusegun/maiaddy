@@ -59,7 +59,7 @@ export type SubLinks = {
               {
                 label: "AgriZone",
                 href: "/agri-zone",
-                description: "",
+                description: "Elevate your agricultural solutions with AgriZone",
               },
               {
                 label: "Tour Map",
