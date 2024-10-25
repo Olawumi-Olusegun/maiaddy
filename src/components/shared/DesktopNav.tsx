@@ -75,11 +75,11 @@ const DesktopNav = () => {
                                 <Link
                                     to={link.href}
                                     className={cn(
-                                        "text-muted font-semibold flex items-center gap-x-0.5 group-hover:text-accent transition-all px-3 py-1 rounded-md hover:bg-secondary",
+                                        "font-semibold text-neutral-70 flex items-center gap-x-0.5 group-hover:text-primary-90 transition-all px-3 py-1 rounded-md ",
                                         pathname === link.href &&
-                                        "text-accent bg-secondary",
+                                        "text-primary-90 bg-secondary",
                                         hovering === index &&
-                                        "text-accent bg-secondary"
+                                        "text-primary-90 bg-secondary"
                                     )}
                                 >
                                     {link.label}
